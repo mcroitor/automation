@@ -7,5 +7,5 @@ my_function() {
 }
 
 my_function
-# echo "${local_var}"  # Ошибка: local_var не определена вне функции
+# echo "${local_var}"  # Error: local_var is not defined outside the function
 echo "${global_var}"  # Выведет: I am global
