@@ -4,5 +4,5 @@
 name="World"
 echo "Hello, $name!"
 
-# oops ="Error"             # "This is an example with error: $oops"
-# oops2= "Another error"    # "This is another example with error: $oops2"
+# oops ="Error"             # Error: space before = is not allowed
+# oops2= "Another error"    # Error: space after = is not allowed
