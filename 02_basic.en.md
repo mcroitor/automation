@@ -17,6 +17,7 @@
       - [while Loop](#while-loop)
       - [until Loop](#until-loop)
     - [Functions](#functions)
+      - [Local Variables](#local-variables)
       - [Shell Script Parameters](#shell-script-parameters)
     - [Error Handling](#error-handling)
     - [Calling External Commands and Scripts](#calling-external-commands-and-scripts)
@@ -133,6 +134,9 @@ Variables are fundamental to scripting, allowing you to store and manipulate dat
 name="John"
 age=30
 ```
+
+> [!NOTE]
+> Variable initialization in Bash should not have spaces around the equals sign `=`.
 
 To reference a variable's value, prefix its name with a dollar sign (`$`). Curly braces (`{}`) can be used to clearly delimit the variable name, which is especially useful in complex expressions:
 
@@ -454,6 +458,15 @@ for i in {1..5}; do
 done
 ```
 
+For iterating over array elements by index, the syntax is similar:
+
+```bash
+array=(one two three)
+for index in "${!array[@]}"; do
+  echo "Element $index: ${array[$index]}"
+done
+```
+
 #### while Loop
 
 The `while` loop executes commands while a condition is true. Syntax:
@@ -520,8 +533,7 @@ Example:
 
 ```bash
 sum() {
-  result=$(( $1 + $2 ))
-  echo "${result}"
+  echo $(( $1 + $2 ))
 }
 value=$(sum 3 5)
 echo "Sum: ${value}"  # Output: Sum: 8
@@ -531,6 +543,21 @@ Function calls are made by its name with the necessary arguments:
 
 ```bash
 function_name arg1 arg2
+```
+
+#### Local Variables
+
+By default, all variables in Bash are global, even if they are defined inside a function. To limit the scope of a variable to the function only, the `local` keyword is used:
+
+```bash
+my_function() {
+  local local_var="I am local"
+  global_var="I am global"
+  echo "${local_var}"
+}
+my_function
+# echo "${local_var}"  # Error: local_var is not defined outside the function
+echo "${global_var}"  # Output: I am global
 ```
 
 #### Shell Script Parameters
