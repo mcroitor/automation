@@ -11,9 +11,9 @@ This course is structured over 15 weeks and covers a range of topics, including:
     - Benefits of Automation
     - Overview of Scripting Languages
     - Tools and Frameworks for Automation
-2. Basic Automation Tasks
+2. Basics of Scripting
     - Setting Up the Environment
-    - Writing Shell Scripts
+    - Writing Shell Scripts in Bash
 3. Advanced Automation Techniques
     - Task Scheduling
     - Error Handling
@@ -49,7 +49,7 @@ This course is structured over 15 weeks and covers a range of topics, including:
 | Nr. | Topic                             | Theory, h | Practice, h | Total, h |
 | --- | --------------------------------- | --------- | ----------- | -------- |
 | 1   | Introduction to Automation        | 2         | 0           | 2        |
-| 2   | Basic Automation Tasks            | 2         | 2           | 4        |
+| 2   | Basics of Scripting               | 2         | 2           | 4        |
 | 3   | Advanced Automation Techniques    | 4         | 4           | 8        |
 | 4   | Version Control and Collaboration | 2         | 4           | 6        |
 | 5   | CI/CD Pipelines                   | 4         | 4           | 8        |

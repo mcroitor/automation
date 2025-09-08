@@ -1,10 +1,10 @@
-# Automation Fundamentals
+# Basics of Scripting
 
-- [Automation Fundamentals](#automation-fundamentals)
+- [Basics of Scripting](#basics-of-scripting)
   - [Environment Setup](#environment-setup)
     - [Environment Variables](#environment-variables)
     - [Command Line Tools](#command-line-tools)
-  - [Writing Shell Scripts](#writing-shell-scripts)
+  - [Writing Shell Scripts in Bash](#writing-shell-scripts-in-bash)
     - [Variables and Data Types](#variables-and-data-types)
       - [Integers](#integers)
       - [Floating-point Numbers](#floating-point-numbers)
@@ -104,7 +104,7 @@ Example of using operators:
 ls -l | grep "\.txt$" > txt_files.txt 2> errors.log
 ```
 
-## Writing Shell Scripts
+## Writing Shell Scripts in Bash
 
 While individual command line instructions are powerful, true automation is achieved by combining commands into scripts. A shell script is a text file containing a sequence of commands, variables, and control structures. Scripts enable the automation of complex workflows, reduce manual effort, and ensure repeatability of routine operations.
 
