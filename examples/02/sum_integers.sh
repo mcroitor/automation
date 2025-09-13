@@ -1,7 +1,7 @@
 #!/bin/bash
 
-name=12
-another=27
+first="12.3"
+last="27.5"
 
-sum=$((name + another))
-echo "${name} + ${another} = ${sum}" 
+sum=$((first + last))
+echo "${first} + ${last} = ${sum}"

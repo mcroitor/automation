@@ -1,5 +1,7 @@
 #!/bin/bash
 
+global_var="a_value"
+
 my_function() {
   local local_var="I am local"
   global_var="I am global"
