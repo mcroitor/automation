@@ -533,7 +533,7 @@ function function_name {
 
 Параметры передаются функции через *позиционные параметры* `$1`, `$2` и т.д. Также внутри функции доступны специальные переменные, такие как `$#` (количество переданных аргументов) и `$@` (все аргументы).
 
-Возврат значения осуществляется с помощью команды `return` (только целое число) или через вывод в стандартный поток.
+Возврат значения функции осуществляется через вывод в стандартный поток.
 
 Пример:
 
@@ -765,8 +765,8 @@ fi
 
 ## Библиография
 
-1. [Shell Scripting Tutorial](https://www.shellscript.sh/)
-2. [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/)
-3. [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/)
-4. [The Linux Command Line](http://linuxcommand.org/tlcl.php)
+1. [Parker Steve, Shell Scripting Tutorial](https://www.shellscript.sh/)
+2. [Cooper Mendel, Advanced Bash-Scripting Guide, 2014](https://tldp.org/LDP/abs/html/)
+3. [Garrels Machtelt, Bash Guide for Beginners, 2008](https://tldp.org/LDP/Bash-Beginners-Guide/html/)
+4. [Shotts William, The Linux Command Line](http://linuxcommand.org/tlcl.php)
 5. [GNU Bash Manual](https://www.gnu.org/software/bash/manual/bash.html)

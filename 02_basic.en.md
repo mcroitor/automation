@@ -44,7 +44,7 @@ Before diving into scripting, it is crucial to understand the environment in whi
 
 ### Environment Variables
 
-_Environment variables_ are dynamic values that influence the behavior of processes within an operating system. They are commonly used to store configuration details such as executable search paths, user preferences, and application-specific parameters. Mastery of environment variables is fundamental for effective automation.
+*Environment variables* are dynamic values that influence the behavior of processes within an operating system. They are commonly used to store configuration details such as executable search paths, user preferences, and application-specific parameters. Mastery of environment variables is fundamental for effective automation.
 
 Key environment variables in Unix-like systems (such as Linux and macOS) include:
 
@@ -532,7 +532,7 @@ function function_name {
 
 Parameters are passed to the function through *positional parameters* `$1`, `$2`, etc. Special variables are also available within the function, such as `$#` (number of arguments passed) and `$@` (all arguments).
 
-Return value is accomplished using the `return` command (integers only) or through output to standard stream.
+Return value is accomplished through output to standard stream.
 
 Example:
 
@@ -772,8 +772,8 @@ Result: if merging is successful, a success message will be displayed, otherwise
 
 ## Bibliography
 
-1. [Shell Scripting Tutorial](https://www.shellscript.sh/)
-2. [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/)
-3. [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/)
-4. [The Linux Command Line](http://linuxcommand.org/tlcl.php)
+1. [Parker Steve, Shell Scripting Tutorial](https://www.shellscript.sh/)
+2. [Cooper Mendel, Advanced Bash-Scripting Guide, 2014](https://tldp.org/LDP/abs/html/)
+3. [Garrels Machtelt, Bash Guide for Beginners, 2008](https://tldp.org/LDP/Bash-Beginners-Guide/html/)
+4. [Shotts William, The Linux Command Line](http://linuxcommand.org/tlcl.php)
 5. [GNU Bash Manual](https://www.gnu.org/software/bash/manual/bash.html)
