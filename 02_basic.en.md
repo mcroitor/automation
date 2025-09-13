@@ -69,7 +69,7 @@ export PATH=$PATH:/new/directory/path
 
 ### Command Line Tools
 
-The _command line interface_ (CLI) is a text-based environment for interacting with the operating system and applications. Unlike graphical user interfaces (GUIs), the CLI enables direct command entry, offering powerful capabilities for system management, task automation, and troubleshooting.
+The *command line interface* (CLI) is a text-based environment for interacting with the operating system and applications. Unlike graphical user interfaces (GUIs), the CLI enables direct command entry, offering powerful capabilities for system management, task automation, and troubleshooting.
 
 Some of the most frequently used command line tools in Unix-like systems include:
 
@@ -89,13 +89,7 @@ Some of the most frequently used command line tools in Unix-like systems include
 - `awk`: Advanced text processing and data extraction tool.
 - `grep`: Searches for text patterns within files.
 
-Commands can be combined using pipes and redirections to construct complex workflows. For example, the following command lists all `.txt` files in the current directory and saves the output to a file, while logging errors separately:
-
-```bash
-ls -l | grep "\.txt$" > txt_files.txt 2> errors.log
-```
-
-Commands in the command line can be combined using pipes and redirections to create complex operations. For example, the command `ls -l | grep "\.txt$"` will output a list of all files with a `.txt` extension in the current directory. The following operators exist:
+Commands can be combined using pipes and redirections to create complex operations. For example, the command `ls -l | grep "\.txt$"` will output a list of all files with a `.txt` extension in the current directory. The following operators exist:
 
 - `|` (pipe): redirects the output of one command to the input of another command.
 - `>`: redirects command output to a file, overwriting its contents.
@@ -111,7 +105,8 @@ Commands in the command line can be combined using pipes and redirections to cre
 Example of using operators:
 
 ```bash
-# Finds all text files in the current directory and saves them to a file, while writing errors to a separate log file
+# Finds all text files in the current directory and saves them to a file, 
+# while writing errors to a separate log file
 ls -l | grep "\.txt$" > txt_files.txt 2> errors.log
 ```
 
@@ -119,7 +114,7 @@ ls -l | grep "\.txt$" > txt_files.txt 2> errors.log
 
 While individual command line instructions are powerful, true automation is achieved by combining commands into scripts. A shell script is a text file containing a sequence of commands, variables, and control structures. Scripts enable the automation of complex workflows, reduce manual effort, and ensure repeatability of routine operations.
 
-Shell scripts in Unix-like systems typically use the `.sh` extension. Each script should begin with a _shebang_ line, which specifies the interpreter to be used for execution. For Bash scripts, the shebang is:
+Shell scripts in Unix-like systems typically use the `.sh` extension. Each script should begin with a *shebang* line, which specifies the interpreter to be used for execution. For Bash scripts, the shebang is:
 
 ```bash
 #!/bin/bash
@@ -133,7 +128,7 @@ echo "Hello, World!"
 date
 ```
 
-To run a script, first make it executable with `chmod +x script.sh`, then execute it using `./script.sh`.
+To run a script, it must be made executable with `chmod +x script.sh`, then executed using `./script.sh`.
 
 ### Variables and Data Types
 
@@ -194,7 +189,7 @@ echo "${greeting}, World!"   # Outputs: Hello, World!
 
 Bash provides several built-in mechanisms for manipulating strings, including obtaining string length, extracting substrings, performing replacements, and changing case. Mastery of these operations is essential for effective text processing in scripts.
 
-**Getting String Length**
+__Getting String Length__
 To get the length of a string, use the syntax `${#variable}`:
 
 ```bash
@@ -202,7 +197,7 @@ str="Hello"
 echo "Length: ${#str}"  # Output: Length: 5
 ```
 
-**Substring Extraction**
+__Substring Extraction__
 To extract a substring, use the following syntax `${variable:start:length}`:
 
 ```bash
@@ -217,7 +212,7 @@ str="Hello, World!"
 echo "Substring: ${str:7}"  # Output: Substring: World!
 ```
 
-**String Replacement**
+__String Replacement__
 To replace a substring, use the following syntax `${variable/pattern/replacement}`:
 
 ```bash
@@ -232,7 +227,7 @@ str="Hello, World!"
 echo "Replaced all: ${str//o/O}"      # Output: Replaced all: HellO, WOrld!
 ```
 
-**Case Conversion**
+__Case Conversion__
 To convert characters to uppercase, the notation `${variable^^}` is used:
 
 ```bash
@@ -251,7 +246,7 @@ echo "Lowercase: ${str,,}"  # Output: Lowercase: hello, world!
 
 Arrays in Bash are ordered collections of elements, each identified by an index. Arrays are invaluable for handling lists of files, command-line arguments, or the results of command execution. Understanding array operations enables you to write scripts that efficiently process bulk data.
 
-**Creating and initializing arrays:**
+__Creating and initializing arrays:__
 Arrays are defined using parentheses, with elements separated by spaces:
 
 ```bash
@@ -260,7 +255,7 @@ numbers=(1 2 3 4 5)
 mixed=("text" 42 "another text")
 ```
 
-**Accessing elements:**
+__Accessing elements:__
 Array elements are accessed by their index (starting from 0):
 
 ```bash
@@ -269,21 +264,21 @@ echo "Second fruit: ${fruits[1]}"  # Outputs: Second fruit: banana
 echo "Third fruit: ${fruits[2]}"   # Outputs: Third fruit: cherry
 ```
 
-**Retrieving all elements:**
+__Retrieving all elements:__
 To retrieve all elements, use `${array[@]}` or `${array[*]}`:
 
 ```bash
 echo "All fruits: ${fruits[@]}"  # Outputs: All fruits: apple banana cherry
 ```
 
-**Determining array size:**
+__Determining array size:__
 The number of elements in an array is given by `${#array[@]}`:
 
 ```bash
 echo "Number of fruits: ${#fruits[@]}"  # Outputs: Number of fruits: 3
 ```
 
-**Adding elements:**
+__Adding elements:__
 Add new elements by specifying an index or using the `+=` operator:
 
 ```bash
@@ -301,7 +296,7 @@ Both conditional operators and loops rely on comparison operators to evaluate co
 
 Bash supports a variety of comparison operators for evaluating conditions within scripts. These operators are grouped by the type of data they compare—numbers, strings, and files. Understanding these operators is essential for writing effective conditional logic.
 
-**Numeric comparison operators:**
+__Numeric comparison operators:__
 
 - `-eq` : equal
 - `-ne` : not equal
@@ -320,7 +315,7 @@ if [ "${num1}" -lt "${num2}" ]; then
 fi
 ```
 
-**String comparison operators:**
+__String comparison operators:__
 
 - `=` or `==` : strings are equal
 - `!=` : strings are not equal
@@ -352,7 +347,7 @@ if [[ "${str1}" < "${str2}" ]]; then
 fi
 ```
 
-**File operators:**
+__File operators:__
 
 File operators allow scripts to test file properties, such as existence, type, and permissions:
 
@@ -373,7 +368,7 @@ if [ -f "${file}" ] && [ -x "${file}" ]; then
 fi
 ```
 
-**Logical operators:**
+__Logical operators:__
 
 Logical operators enable the combination and negation of conditions, allowing for more complex decision-making:
 
@@ -535,7 +530,7 @@ function function_name {
 }
 ```
 
-Parameters are passed to the function through _positional parameters_ `$1`, `$2`, etc. Special variables are also available within the function, such as `$#` (number of arguments passed) and `$@` (all arguments).
+Parameters are passed to the function through *positional parameters* `$1`, `$2`, etc. Special variables are also available within the function, such as `$#` (number of arguments passed) and `$@` (all arguments).
 
 Return value is accomplished using the `return` command (integers only) or through output to standard stream.
 
@@ -572,7 +567,7 @@ echo "${global_var}"  # Output: I am global
 
 #### Shell Script Parameters
 
-Parameters passed to the script when called are available within the script through _positional parameters_, just like in functions. Main parameters:
+Parameters passed to the script when called are available within the script through *positional parameters*, just like in functions. Main parameters:
 
 - `$0`: script name;
 - `$1`, `$2`, ...: first, second, etc. arguments;
@@ -600,7 +595,7 @@ echo "Done."
 
 Error handling is a critically important aspect of developing reliable scripts. Bash provides several approaches to error handling.
 
-**Exit code checking:**
+__Exit code checking:__
 Each command in Bash returns an exit code, which is stored in the special variable `$?`. Code 0 means successful execution, any other value indicates an error.
 
 ```bash
@@ -611,7 +606,7 @@ if [ "$?" -ne 0 ]; then
 fi
 ```
 
-**Automatic termination on error:**
+__Automatic termination on error:__
 The `set -e` option forces the script to terminate on the first error:
 
 ```bash
@@ -620,7 +615,7 @@ cp file1.txt file2.txt
 # If an error occurs, script execution will stop
 ```
 
-**Strict mode:**
+__Strict mode:__
 For improved reliability, it's recommended to use a combination of options:
 
 ```bash
@@ -630,7 +625,7 @@ set -euo pipefail
 # -o pipefail: error in any part of pipeline stops execution
 ```
 
-**Logical operators for error handling:**
+__Logical operators for error handling:__
 The `&&` and `||` operators allow creating conditional execution chains:
 
 ```bash
