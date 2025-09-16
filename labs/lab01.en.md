@@ -29,6 +29,16 @@ Automate one of the following tasks using a Shell script:
    5. The script should output the current disk space usage in percent for the specified directory to the file `disk_usage.log`;
    6. The script should check that the specified directory exists and output appropriate error messages.
 
+### Requirements
+
+1. Create `automation` repository;
+2. In the repository create a file `README.md` with the description of repository;
+3. Create branch `lab01`;
+4. In this branch create `lab01` folder;
+5. In the `lab01` folder create the necessary by the task script;
+6. In the `lab01` folder create `README.md` file with the script description (what script do, how to use it) with usage examples;
+7. Send the project to the server and merge changes to the main branch.
+
 ## Presentation
 
 Upload the script to a GitHub repository and provide a link to it.
