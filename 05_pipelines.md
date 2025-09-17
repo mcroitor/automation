@@ -8,7 +8,7 @@
 
 ## Инструменты и технологии
 
-### Github Actions
+### GitHub Actions
 
 ### GitLab CI
 
