@@ -379,9 +379,9 @@ def merge_files(output_file, input_files, encoding='utf-8'):
                             outfile.write('\n' + '='*50 + '\n')
                             
                 except UnicodeDecodeError:
-                    print(f"Warning: Encoding error in {filepath}, trying latin-1...")
+                    print(f"Warning: Encoding error in {filepath}, trying cp1251...")
                     try:
-                        with open(filepath, 'r', encoding='latin-1') as infile:
+                        with open(filepath, 'r', encoding='cp1251') as infile:
                             content = infile.read()
                             outfile.write(content)
                             if i < total_files:
