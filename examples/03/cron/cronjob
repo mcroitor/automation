@@ -1,0 +1,4 @@
+# runs /hello.sh periodically, each 1 min.
+# Output goes to cron.log and also to syslog
+* * * * * root /hello.sh >> /var/log/cron.log 2>&1
+* * * * * root echo "$(date): Cron job executed" >> /var/log/cron.log
