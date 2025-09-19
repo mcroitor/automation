@@ -8,7 +8,7 @@ env | grep -v '^_' > /etc/environment
 
 # Create and set permissions for log file
 touch /var/log/cron.log
-chmod 644 /var/log/cron.log
+chmod 666 /var/log/cron.log
 
 # Show cron configuration
 echo "Cron jobs configured:"
