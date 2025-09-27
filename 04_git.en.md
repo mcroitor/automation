@@ -322,6 +322,8 @@ A typical development process using code review includes the following stages:
 8. **Iterations**: Addressing feedback and re-review
 9. **Approval and merge**: Integration into main branch
 
+The code review process can be supported by various tools integrated into development platforms (GitHub, GitLab, Bitbucket) or specialized systems (Crucible, Review Board). These tools provide convenient interfaces for discussing changes, tracking comments, and managing the review process.
+
 ## Using Git for Automation Scripts
 
 Git as the foundation of DevOps processes plays a central role in modern software development automation. The version control system serves not only as a code management tool but also as a **trigger mechanism** for launching automated processes.
