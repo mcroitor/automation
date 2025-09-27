@@ -33,3 +33,14 @@ Create a file `readme.md` and describe:
 Upload the script to a GitHub repository and provide a link to it.
 
 ## Evaluation
+
+| Criterion                                   | No  | Partial | Yes  |
+| ------------------------------------------- | --- | ------- | ---- |
+| The script meets all requirements           | 0   | 50      | 100  |
+| The code is well-structured and commented   | 0   | 20      | 40   |
+| The script runs successfully without errors | 0   | 10      | 20   |
+| Logging and notifications                   | 0   | 10      | 20   |
+| Documentation and usage examples            | 0   | 10      | 20   |
+| Each day late                               | 0   | 0       | -20  |
+| Plagiarism                                  | 0   | 0       | -100 |
+| **Total**                                   |     |         | 200  |
