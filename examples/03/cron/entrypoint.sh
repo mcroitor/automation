@@ -1,28 +1,30 @@
 #!/bin/sh
 
-echo "Starting cron service..."
+create_log_file() {
+    echo "Creating log file..."
+    touch /var/log/cron.log
+    chmod 666 /var/log/cron.log
+    echo "Log file created at /var/log/cron.log"
+}
+
+monitor_logs() {
+    echo "=== Monitoring cron logs ==="
+    tail -f /var/log/cron.log
+}
+
+run_cron() {
+    echo "=== Starting cron daemon ==="
+    exec cron -f
+}
 
 # Save environment variables for cron
 env > /etc/environment
 
 # Create log file with proper permissions
-touch /var/log/cron.log
-chmod 666 /var/log/cron.log
+create_log_file
 
-# Start cron service first
-service cron start
+# Start monitoring logs in the background
+monitor_logs &
 
-# Show cron status
-echo "Cron service status:"
-service cron status
-
-# Display current crontab
-echo "Active crontab:"
-crontab -l
-
-# Start monitoring cron logs and output to stdout
-echo "Monitoring cron logs..."
-tail -f /var/log/cron.log &
-
-# Keep container running and show live logs
-exec cron -f -L /dev/stdout
+# Start cron service
+run_cron

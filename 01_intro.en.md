@@ -10,7 +10,7 @@
   - [Bibliography](#bibliography)
 
 > Our wizards, — he continued, — create automated systems that allow them to conduct complex experiments and observations without being physically present.
-> 
+>
 > __A. and B. Strugatsky, *Monday Begins on Saturday*__
 
 ## What is Automation?

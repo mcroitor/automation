@@ -171,6 +171,8 @@ To effectively manage errors in automated processes, various approaches can be u
 
 ## Writing Python Scripts
 
+The need to obtain data from various sources and process it at a specific time can become a complex task for the Bash language. In such cases, more powerful programming languages are typically used, which allow for parsing complex data structures (JSON, XML, etc.), working with network requests, handling exceptions, and much more.
+
 Python is one of the most popular programming languages for task automation due to its simplicity and rich ecosystem of libraries. Writing scripts in Python allows you to automate a wide range of tasks, from file processing to interacting with web services.
 
 Python provides a variety of built-in modules and third-party libraries that simplify the development of automated solutions. For example, the `os` and `shutil` modules allow you to work with the file system, `requests` is used for interacting with web APIs, and `schedule` is used for scheduling tasks. Additionally, Python has powerful tools for data analysis, text processing, and database interaction.
