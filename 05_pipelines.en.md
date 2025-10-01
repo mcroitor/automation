@@ -15,7 +15,7 @@ Modern software development resembles assembly line production. Each stage of so
 
 ## Continuous Integration
 
-As already mentioned in the [version control chapter](04_git.md), a typical developer workflow includes the following steps:
+As already mentioned in the [version control chapter](04_git.en.md), a typical developer workflow includes the following steps:
 
 1. **Planning**: Defining the task and creating a feature branch;
 2. **Development**: Implementing functionality with regular commits;

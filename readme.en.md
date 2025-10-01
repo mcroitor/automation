@@ -27,19 +27,24 @@ This course is structured over 15 weeks and covers a range of topics, including:
     - Continuous Integration
     - Continuous Deployment
     - Tools and Technologies (e.g., Jenkins, GitLab CI)
-6. Optimization and Scaling
+6. Jenkins
+   - Installing and Configuring Jenkins
+   - Jenkinsfile
+   - Groovy Language
+   - Basics of Pipeline Programming
+7. Optimization and Scaling
     - Performance Tuning
     - Scaling Automation Solutions
     - Load Testing
-7. Infrastructure as Code (IaC)
+8. Infrastructure as Code (IaC)
     - Introduction to IaC
     - Tools and Technologies (e.g., Terraform, Ansible)
     - Best Practices for IaC
-8. Security in Automation
+9. Security in Automation
     - Secure Coding Practices
     - Handling Sensitive Data
     - Automation in Secure Environments
-9. Best Practices for Automation
+10. Best Practices for Automation
     - Writing Maintainable Scripts
     - Documentation and Comments
     - Testing Automated Scripts
@@ -52,11 +57,12 @@ This course is structured over 15 weeks and covers a range of topics, including:
 | 2   | Basics of Scripting               | 2         | 2           | 4        |
 | 3   | Advanced Automation Techniques    | 4         | 4           | 8        |
 | 4   | Version Control and Collaboration | 2         | 4           | 6        |
-| 5   | CI/CD Pipelines                   | 4         | 4           | 8        |
-| 6   | Optimization and Scaling          | 4         | 4           | 8        |
-| 7   | Infrastructure as Code (IaC)      | 4         | 4           | 8        |
-| 8   | Security in Automation            | 4         | 4           | 8        |
-| 9   | Best Practices for Automation     | 4         | 4           | 8        |
+| 5   | CI/CD Pipelines                   | 2         | 2           | 4        |
+| 6   | Jenkins                           | 2         | 2           | 4        |
+| 7   | Optimization and Scaling          | 4         | 4           | 8        |
+| 8   | Infrastructure as Code (IaC)      | 4         | 4           | 8        |
+| 9   | Security in Automation            | 4         | 4           | 8        |
+| 10  | Best Practices for Automation     | 4         | 4           | 8        |
 |     | **Total**                         | **30**    | **30**      | **60**   |
 
 ## Lab Work Topics
