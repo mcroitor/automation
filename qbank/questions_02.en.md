@@ -22,9 +22,9 @@
    - [ ] The command will be ignored
 5. Which syntax is used to get the length of a string in Bash?
    - [x] `${#variable}`
-   - [ ] `${variable#}`
-   - [ ] `${len(variable)}`
-   - [ ] `${variable.length}`
+   - [ ] `$(variable#)`
+   - [ ] `len(${variable})`
+   - [ ] `${variable}.length`
 6. How to perform arithmetic operations with integers in Bash?
    - [x] Using double parentheses `(( ))`
    - [ ] Using single parentheses `( )`
@@ -43,59 +43,69 @@
 9. Which syntax is used to extract a substring in Bash?
    - [x] `${variable:start:length}`
    - [ ] `${variable[start:length]}`
-   - [ ] `${substr(variable,start,length)}`
-   - [ ] `${variable.substring(start,length)}`
+   - [ ] `substr(${variable},start,length)`
+   - [ ] `${variable}.substring(start,length)`
 10. How to get all elements of an array in Bash?
     - [x] `${array[@]}`
     - [ ] `${array[*all]}`
     - [ ] `${array.all}`
     - [ ] `${array[0..n]}`
-11. Which comparison operator is used to check numerical equality?
+11. Which comparison operator is used to check numerical equality in Bash?
     - [x] `-eq`
     - [ ] `==`
     - [ ] `-equal`
     - [ ] `=`
-12. Which operator checks that a file exists and is a regular file?
+12. Which comparison operator is used to check if one number is less than another?
+    - [x] `-lt`
+    - [ ] `<`
+    - [ ] `less`
+    - [ ] `-less`
+13. Which operator checks that a file exists and is a regular file in Bash?
     - [x] `-f`
     - [ ] `-e`
     - [ ] `-d`
     - [ ] `-r`
-13. What does the `&&` operator mean on the command line?
+14. What does the `&&` operator mean on the command line?
     - [x] Executes the second command only if the first one completed successfully
     - [ ] Executes both commands in parallel
     - [ ] Executes the second command only if the first one failed
     - [ ] Combines the output of two commands
-14. Which construct is used to check multiple conditions in if statements?
+15. What does the `||` operator mean on the command line?
+    - [x] Executes the second command only if the first one failed
+    - [ ] Executes both commands in parallel
+    - [ ] Executes the second command only if the first one completed successfully
+    - [ ] Combines the output of two commands
+16. Which construct is used to check multiple conditions in if statements in Bash?
     - [x] `elif`
     - [ ] `elseif`
     - [ ] `else if`
-    - [ ] `ifelse`
-15. How to create a numeric range in a for loop?
+    - [ ] `case`
+17. How to create a numeric range in a for loop in Bash?
     - [x] `{start..end}`
     - [ ] `[start..end]`
     - [ ] `(start..end)`
     - [ ] `start:end`
-16. What is the difference between while and until loops?
+18. What is the difference between while and until loops in Bash?
     - [x] `while` executes while the condition is true, `until` - while the condition is false
     - [ ] `while` is faster, `until` is slower
     - [ ] `while` is for numbers, `until` is for strings
     - [ ] There is no difference, they are synonyms
-17. How to declare a local variable inside a function?
+19. How to declare a local variable inside a function in Bash?
     - [x] `local variable_name=value`
     - [ ] `var variable_name=value`
     - [ ] `private variable_name=value`
     - [ ] `scope variable_name=value`
-18. Which variable contains the number of arguments passed to the script?
+20. Which variable contains the number of arguments passed to the script in Bash?
     - [x] `$#`
     - [ ] `$@`
     - [ ] `$*`
     - [ ] `$0`
-19. What does the `set -e` command do?
+21. What does the `set -e` command do in Bash?
     - [x] Terminates script execution on the first error
     - [ ] Enables debug mode
     - [ ] Exports all variables
     - [ ] Sets UTF-8 encoding
-20. Which symbol is used to execute a command in the background?
+22. Which symbol is used to execute a command in the background in Bash?
     - [x] `&`
     - [ ] `%`
     - [ ] `*`
