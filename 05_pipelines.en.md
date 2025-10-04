@@ -13,6 +13,8 @@
 
 Modern software development resembles assembly line production. Each stage of software creation requires automation and integration into a unified process. Specialized technologies are used to solve these tasks: _Continuous Integration_ (CI) and _Continuous Delivery/Deployment_ (CD).
 
+In the software development process, all created entities are called _artifacts_. These can be binary files, libraries, containers, scripts, and other components necessary for the application to function. Artifacts are created during the build stage and are used in subsequent stages of the CI/CD pipeline.
+
 ## Continuous Integration
 
 As already mentioned in the [version control chapter](04_git.en.md), a typical developer workflow includes the following steps:
@@ -150,22 +152,19 @@ To create a pipeline in GitHub Actions, a `.github/workflows/<workflow-name>.yml
 - **Jobs**: Define a set of tasks that should be executed as part of the pipeline. Each job can consist of several steps;
 - **Steps**: Define specific actions that should be executed within a job (e.g., installing dependencies, running tests, deployment, etc.).
 
-Example of a simple pipeline that runs on every Pull Request creation to the `main` branch, sets up Node.js environment, installs dependencies, runs tests, and builds the application:
+Example of a simple pipeline that runs on every Pull Request creation to the `main` branch, sets up Node.js environment, installs dependencies, runs linting, tests with coverage, security audit, and builds the application:
 
 ```yaml
 name: CI/CD Pipeline
 on:
   pull_request:
     branches: [main]
-  push:
-    branches: [main]
 
 env:
   NODE_VERSION: '21'
-  REGISTRY: ghcr.io
 
 jobs:
-  test-and-security:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -189,56 +188,24 @@ jobs:
       - name: Security audit
         run: npm audit --audit-level=high
         
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
-        
-  build-and-push:
-    needs: test-and-security
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    permissions:
-      contents: read
-      packages: write
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-        
-      - name: Log in to Container Registry
-        uses: docker/login-action@v3
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          push: true
-          tags: ${{ env.REGISTRY }}/${{ github.repository }}:${{ github.sha }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+      - name: Build application
+        run: npm run build
 ```
 
 ### GitLab CI
 
 GitLab CI is a CI/CD tool built into GitLab that allows automating building, testing, and deployment processes. It uses a `.gitlab-ci.yml` file to define stages and execution conditions.
 
-Example of a simple pipeline in GitLab CI that runs on every merge request creation to the `main` branch, sets up Node.js environment, installs dependencies, runs tests, and builds the application:
+Example of a simple pipeline in GitLab CI that runs on every merge request creation to the `main` branch, sets up Node.js environment, installs dependencies, runs linting, tests with coverage, security audit, and builds the application:
 
 ```yaml
 stages:
   - test
   - security
   - build
-  - deploy
 
 variables:
   NODE_VERSION: "21"
-  DOCKER_DRIVER: overlay2
 
 before_script:
   - node --version
@@ -249,9 +216,9 @@ test_job:
   image: node:21
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
-    - if: $CI_COMMIT_BRANCH == "main"
   script:
     - npm ci
+    - npm run lint
     - npm run test:coverage
   coverage: '/Lines\s*:\s*(\d+\.?\d*)%/'
   artifacts:
@@ -268,22 +235,18 @@ security_scan:
   image: node:21
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
-    - if: $CI_COMMIT_BRANCH == "main"
   script:
     - npm audit --audit-level=high
-    - npm run lint:security
   allow_failure: false
 
 build_job:
   stage: build
-  image: docker:latest
-  services:
-    - docker:dind
+  image: node:21
   rules:
-    - if: $CI_COMMIT_BRANCH == "main"
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
   script:
-    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA .
-    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+    - npm ci
+    - npm run build
   cache:
     paths:
       - node_modules/
@@ -295,31 +258,53 @@ Jenkins is a popular open-source CI/CD automation platform. The ability to insta
 
 Pipelines in Jenkins are defined through a `Jenkinsfile` containing descriptions of stages, execution conditions, and build logic. The `Jenkinsfile` is written in Groovy, which is a dynamic programming language that runs on the Java Virtual Machine (JVM). Groovy was developed to simplify script writing and provide more concise syntax while maintaining full compatibility with Java.
 
-Example of a simple `Jenkinsfile` that performs application building, testing, and deployment:
+Example of a simple `Jenkinsfile` that performs dependency installation, linting, testing with coverage, security audit, and application building:
 
 ```groovy
 pipeline {
     agent any
+    
+    tools {
+        nodejs '21'
+    }
+    
     stages {
-        stage('Build') {
+        stage('Install Dependencies') {
             steps {
-                echo 'Building...'
+                echo 'Installing dependencies...'
                 sh 'npm ci'
             }
         }
-        stage('Test') {
+        
+        stage('Lint') {
             steps {
-                echo 'Testing...'
-                sh 'npm test'
+                echo 'Running linting...'
+                sh 'npm run lint'
             }
         }
-        stage('Deploy') {
+        
+        stage('Test') {
             steps {
-                echo 'Deploying...'
+                echo 'Running tests with coverage...'
+                sh 'npm run test:coverage'
+            }
+        }
+        
+        stage('Security Audit') {
+            steps {
+                echo 'Running security audit...'
+                sh 'npm audit --audit-level=high'
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                echo 'Building application...'
                 sh 'npm run build'
             }
         }
     }
+    
     post {
         success {
             echo 'Pipeline completed successfully!'
