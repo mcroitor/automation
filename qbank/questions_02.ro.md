@@ -55,47 +55,57 @@
     - [ ] `==`
     - [ ] `-equal`
     - [ ] `=`
-12. Ce operator verifică că un fișier există și este un fișier obișnuit în Bash?
+12. Ce operator de comparație este folosit pentru a verifica dacă un număr este mai mic decât altul?
+    - [x] `-lt`
+    - [ ] `<`
+    - [ ] `less`
+    - [ ] `-less`
+13. Ce operator verifică că un fișier există și este un fișier obișnuit în Bash?
     - [x] `-f`
     - [ ] `-e`
     - [ ] `-d`
     - [ ] `-r`
-13. Ce înseamnă operatorul `&&` în linia de comandă în Bash?
+14. Ce înseamnă operatorul `&&` în linia de comandă în Bash?
     - [x] Execută a doua comandă doar dacă prima s-a terminat cu succes
     - [ ] Execută ambele comenzi în paralel
     - [ ] Execută a doua comandă doar dacă prima a eșuat
     - [ ] Combină rezultatul celor două comenzi
-14. Ce construct este folosit pentru a verifica mai multe condiții în instrucțiunile if în Bash?
+15. Ce înseamnă operatorul `||` în linia de comandă în Bash?
+    - [x] Execută a doua comandă doar dacă prima a eșuat
+    - [ ] Execută ambele comenzi în paralel
+    - [ ] Execută a doua comandă doar dacă prima s-a terminat cu succes
+    - [ ] Combină rezultatul celor două comenzi
+16. Ce construct este folosit pentru a verifica mai multe condiții în instrucțiunile if în Bash?
     - [x] `elif`
     - [ ] `elseif`
     - [ ] `else if`
     - [ ] `ifelse`
-15. Cum se creează un interval numeric într-o buclă for în Bash?
+17. Cum se creează un interval numeric într-o buclă for în Bash?
     - [x] `{start..end}`
     - [ ] `[start..end]`
     - [ ] `(start..end)`
     - [ ] `start:end`
-16. Care este diferența dintre buclele while și until în Bash?
+18. Care este diferența dintre buclele while și until în Bash?
     - [x] `while` execută în timp ce condiția este adevărată, `until` - în timp ce condiția este falsă
     - [ ] `while` este mai rapid, `until` este mai lent
     - [ ] `while` este pentru numere, `until` este pentru șiruri
     - [ ] Nu există diferență, sunt sinonime
-17. Cum se declară o variabilă locală într-o funcție în Bash?
+19. Cum se declară o variabilă locală într-o funcție în Bash?
     - [x] `local variable_name=value`
     - [ ] `var variable_name=value`
     - [ ] `private variable_name=value`
     - [ ] `scope variable_name=value`
-18. Ce variabilă conține numărul de argumente transmise scriptului în Bash?
+20. Ce variabilă conține numărul de argumente transmise scriptului în Bash?
     - [x] `$#`
     - [ ] `$@`
     - [ ] `$*`
     - [ ] `$0`
-19. Ce face comanda `set -e` în Bash?
+21. Ce face comanda `set -e` în Bash?
     - [x] Termină execuția scriptului la prima eroare
     - [ ] Activează modul de debug
     - [ ] Exportă toate variabilele
     - [ ] Setează encodarea UTF-8
-20. Ce simbol este folosit pentru a executa o comandă în fundal în Bash?
+22. Ce simbol este folosit pentru a executa o comandă în fundal în Bash?
     - [x] `&`
     - [ ] `%`
     - [ ] `*`
