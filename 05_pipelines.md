@@ -9,6 +9,7 @@
     - [GitHub Actions](#github-actions)
     - [GitLab CI](#gitlab-ci)
     - [Jenkins](#jenkins)
+    - [Сравнение инструментов CI/CD](#сравнение-инструментов-cicd)
   - [Библиография](#библиография)
 
 Современная разработка программных продуктов напоминает конвейерное производство. Каждая стадия создания ПО требует автоматизации и интеграции в единый процесс. Для решения этих задач применяются специализированные технологии: _непрерывная интеграция_ (Continuous Integration, CI) и _непрерывное развертывание_ (Continuous Delivery/Deployment, CD).
@@ -316,6 +317,22 @@ pipeline {
 }
 ```
 
+### Сравнение инструментов CI/CD
+
+Ниже представлено сравнение трёх популярных инструментов CI/CD: Jenkins, GitHub Actions и GitLab CI/CD.
+
+| Функция                | Jenkins                       | GitHub Actions               | GitLab CI/CD                 |
+|-----------------------|-------------------------------|------------------------------|------------------------------|
+| Простота настройки    | Средняя до сложной (самостоятельный хостинг) | Легкая (облачный сервис)     | Легкая (облачный сервис)     |
+| Настраиваемость       | Обширная                      | Средняя                      | Высокая                      |
+| Интеграция            | На основе плагинов            | Встроенная в GitHub         | Встроенная в GitLab          |
+| Функции безопасности  | Зависит от плагинов           | Базовая                    | Встроенные DevSecOps         |
+| Лучший хостинг        | Самостоятельный хостинг       | Облачный сервис          | Гибридный (облачный или самостоятельный хостинг) |
+| Кривая обучения       | Крутая                        | Минимальная                  | Средняя                     |
+| Поддержка сообщества | Большое, с открытым исходным кодом | Растущая                     | Большое, интегрированное     |
+
+Для выбора подходящего инструмента CI/CD важно учитывать требования проекта, опыт команды и инфраструктурные возможности. Для сложных энтерпрайз-проектов с особыми требованиями к безопасности и кастомизации может подойти Jenkins. Для проектов, размещённых на GitHub, удобен GitHub Actions благодаря тесной интеграции. GitLab CI/CD отлично подходит для команд, использующих GitLab, благодаря богатому функционалу и встроенным DevSecOps возможностям.
+
 ## Библиография
 
 1. [Pipeline as Code, Jenkins](https://www.jenkins.io/doc/book/pipeline/pipeline-as-code)
@@ -325,3 +342,4 @@ pipeline {
 5. [GitHub Actions Documentation](https://docs.github.com/en/actions)
 6. [GitLab CI/CD Documentation](https://docs.gitlab.com/ee/ci/)
 7. [Pittet Sten, Continuous Integration vs Continuous Delivery vs Continuous Deployment, Atlassian](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)
+8. [Vivesh, Jenkins vs. GitHub Actions vs. GitLab CI, Dev.to, 2024](https://dev.to/574n13y/jenkins-vs-github-actions-vs-gitlab-ci-2k35)
