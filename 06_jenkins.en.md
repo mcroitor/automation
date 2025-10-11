@@ -128,7 +128,10 @@ Finally, for code quality analysis, it is useful to install:
 - **HTML Publisher** — HTML format report publishing
 - **Cobertura** — code coverage reports
 
-Additionally, you can install the **Blue Ocean** plugin, which provides a modern interface for pipeline visualization and simplifies their creation and management (note: Blue Ocean was deprecated by Jenkins in 2023 and is no longer actively maintained).
+Additionally, you can install the **Blue Ocean** plugin, which provides a modern interface for pipeline visualization and simplifies their creation and management.
+
+> [!NOTE]
+> Blue Ocean was deprecated by Jenkins in 2023 and is no longer actively maintained.
 
 ## Jenkinsfile
 

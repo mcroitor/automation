@@ -9,6 +9,7 @@
     - [GitHub Actions](#github-actions)
     - [GitLab CI](#gitlab-ci)
     - [Jenkins](#jenkins)
+    - [CI/CD Tools Comparison](#cicd-tools-comparison)
   - [Bibliography](#bibliography)
 
 Modern software development resembles assembly line production. Each stage of software creation requires automation and integration into a unified process. Specialized technologies are used to solve these tasks: _Continuous Integration_ (CI) and _Continuous Delivery/Deployment_ (CD).
@@ -315,6 +316,22 @@ pipeline {
     }
 }
 ```
+
+### CI/CD Tools Comparison
+
+Below is a comparison of three popular CI/CD tools: Jenkins, GitHub Actions, and GitLab CI/CD.
+
+| Feature           | Jenkins                         | GitHub Actions       | GitLab CI/CD                  |
+| ----------------- | ------------------------------- | -------------------- | ----------------------------- |
+| Ease of Setup     | Medium to Complex (self-hosted) | Easy (cloud service) | Easy (cloud service)          |
+| Customizability   | Extensive                       | Medium               | High                          |
+| Integration       | Plugin-based                    | Built into GitHub    | Built into GitLab             |
+| Security Features | Depends on plugins              | Basic                | Built-in DevSecOps            |
+| Best Hosting      | Self-hosted                     | Cloud service        | Hybrid (cloud or self-hosted) |
+| Learning Curve    | Steep                           | Minimal              | Moderate                      |
+| Community Support | Large, open-source              | Growing              | Large, integrated             |
+
+For choosing the right CI/CD tool, it is important to consider project requirements, team experience, and infrastructure capabilities. For complex enterprise projects with specific security and customization needs, Jenkins may be suitable. For projects hosted on GitHub, GitHub Actions is convenient due to its tight integration. GitLab CI/CD is excellent for teams using GitLab, thanks to its rich features and built-in DevSecOps capabilities.
 
 ## Bibliography
 
