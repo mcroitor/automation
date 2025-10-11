@@ -112,7 +112,7 @@ Jenkins has many plugins, but for a basic CI/CD process, it is recommended to in
 - **Git** — work with Git repositories
 - **Pipeline** — support for pipelines as code
 - **Docker Pipeline** — Docker integration
-- **NodeJS** — Node.js environment management and build support
+- **NodeJS** — Node.js project support
 - **JUnit** — test result publishing
 
 For integration with external systems, it is recommended to install:
