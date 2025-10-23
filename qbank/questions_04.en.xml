@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Category for questions -->
+  <question type="category">
+    <category>
+      <text>$course$/04_git</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is Git?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Distributed version control system</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Centralized version control system</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Database management system</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Cloud file storage</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which command is used to initialize a new Git repository?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>git init</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git create</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git new</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git start</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the <code>git add</code> command do?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Prepares files for commit (staging)</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Creates a new file in the repository</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Adds a remote repository</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Merges branches</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no04</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which command is used to create a commit in Git?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>git commit -m "message"</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git save -m "message"</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git create -m "message"</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git record -m "message"</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no05</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What information must be configured during initial Git setup?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Username and email</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Password and access token</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Project path and branch name</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Server address and connection port</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no06</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the modern recommended command for switching between branches (Git 2.23+)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>git switch</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git checkout</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git branch</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git change</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no07</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What happens when executing the <code>git clone</code> command?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Creates a complete local copy of the remote repository</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Creates a link to the remote repository</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Copies only the latest changes</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Creates a new branch in the current repository</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no08</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which file is used to exclude files from Git tracking?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>.gitignore</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>.gitexclude</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>.exclude</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>.ignore</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no09</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does SHA-1 hash mean in Git context?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Unique commit identifier</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Password for repository access</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Git version number</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>File size in bytes</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no10</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which command shows the current state of the working directory?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>git status</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git info</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git state</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git check</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no11</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is a merge conflict?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Git cannot automatically merge changes from different branches</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Error when connecting to remote repository</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Git version mismatch on different computers</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>One developer disagrees with another's changes</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no12</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which command is used to view commit history?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>git log</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git history</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git show</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git list</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no13</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Command for undoing changes in the working directory?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>git restore</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git undo</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git unmerge</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git back</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no14</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the <code>git fetch</code> command do?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Gets updates from remote repository without automatic merging</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Sends changes to remote repository</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Creates a new branch</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Deletes local changes</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no15</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the difference between <code>git pull</code> and <code>git fetch</code>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>pull</code> gets changes and automatically merges them, <code>fetch</code> only gets]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pull</code> works with branches, <code>fetch</code> with commits]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pull</code> for large files, <code>fetch</code> for small ones]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>No difference, they are synonyms</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no16</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is rebase in Git?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Rewriting commit history to create a more linear history</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Creating a repository backup</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Deleting old commits</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Merging all branches into one</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no17</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is <code>git stash</code> used for?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Temporarily saving unfinished changes</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Creating a permanent backup</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Deleting unnecessary files</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Sending changes to remote repository</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no18</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the foundation of Git architecture?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Directed Acyclic Graph (DAG)</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Relational database</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Linear list of changes</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Tree directory structure</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no19</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which command creates a new branch and immediately switches to it?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>git checkout -b &lt;branch-name&gt;</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git branch &lt;branch-name&gt;</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git switch &lt;branch-name&gt;</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git branch -s &lt;branch-name&gt;</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no20</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is a Pull Request (Merge Request)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Request to merge changes from one branch to another with code review capability</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Command to get changes from remote repository</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Automatic branch merging during conflicts</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Creating a backup before changes</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no21</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>For which types of files is Git LFS recommended?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Large binary files (media, archives)</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Source code text files</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Configuration files</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Documentation files</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no22</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the <code>git gc</code> command do?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Optimizes repository by removing unnecessary objects</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Creates a new commit</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Switches to main branch</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Shows repository statistics</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no23</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the <code>git diff</code> command show?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Differences between working directory and last commit</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>List of all files in repository</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>File change history</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Commit statistics by authors</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no24</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the <code>git remote add origin &lt;url&gt;</code> command used for?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Adds a remote repository named origin</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Creates a new branch origin</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Clones repository to origin folder</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Sets origin as current branch</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme04_no25</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which command adds a file to Git tracking?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>git add &lt;filename&gt;</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git track &lt;filename&gt;</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git watch &lt;filename&gt;</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>git follow &lt;filename&gt;</code>]]></text>
+    </answer>
+  </question>
+
+</quiz>
