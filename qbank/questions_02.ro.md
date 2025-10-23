@@ -1,5 +1,7 @@
 # Întrebări despre "Fundamentele Scriptingului"
 
+## Cunoaștere
+
 1. Ce sunt variabilele de mediu?
    - [x] Valori dinamice care pot influența comportamentul proceselor din sistemul de operare
    - [ ] Valori statice stocate în fișiere de configurare
@@ -110,3 +112,48 @@
     - [ ] `%`
     - [ ] `*`
     - [ ] `@`
+
+## Înțelegere
+
+1. Cum se adaugă directorul `/opt/myapp/bin` la variabila `PATH` în Bash?
+   - `export PATH=$PATH:/opt/myapp/bin`
+   - `export PATH=/opt/myapp/bin:$PATH`
+2. Cum se declară o variabilă `version` cu valoarea "2.0.5" în Bash?
+   - `version="2.0.5"`
+3. Cum se declară o variabilă `app_name` cu valoarea "myapp" în Bash?
+   - `app_name="myapp"`
+4. Cum se calculează suma a două numere întregi `a` și `b` în Bash și se stochează rezultatul în variabila `sum`?
+   - `sum=$((a + b))`
+   - `sum=$(echo "$a + $b" | bc)`
+5. Cum se calculează produsul a două numere întregi `a` și `b` în Bash și se stochează rezultatul în variabila `product`?
+   - `product=$((a * b))`
+   - `product=$(echo "$a * $b" | bc)`
+6. Cum se calculează suma a două numere în virgulă mobilă `3.14` și `2.86` în Bash folosind `bc`?
+   - `echo "3.14 + 2.86" | bc`
+7. Cum se obține lungimea unui șir stocat în variabila `text` în Bash?
+   - `${#text}`
+8. Cum se extrage un subșir din variabila `str="Hello, World!"` începând de la poziția 7 cu lungimea de 5 caractere în Bash?
+   - `${str:7:5}`
+9. Cum se înlocuiesc toate aparițiile caracterului "o" cu "O" în variabila `text="Hello, World!"` în Bash?
+   - `${text//o/O}`
+10. Dat fiind următorul cod Bash:
+
+    ```bash
+    text="Hello, World!"
+    echo "${text//l/L}"
+    ```
+
+    Ce va fi afișat pe ecran ca rezultat al execuției acestui cod?
+    - `HeLLo, WorLd!`
+11. Cum se adaugă elementul "orange" la un array existent `fruits` în Bash?
+    - `fruits+=("orange")`
+    - `fruits[${#fruits[@]}]="orange"`
+12. Cum se șterge fișierul `installation.log` în terminal?
+    - `rm installation.log`
+13. Cum se creează fișierul `config.txt` cu conținutul `APP_NAME=app` în terminal?
+    - `echo "APP_NAME=app" > config.txt`
+14. Cum se creează directorul `logs` și se navighează în el în terminal?
+    - `mkdir logs && cd logs`
+    - `mkdir logs; cd logs`
+15. Cum se afișează lista de fișiere (inclusiv cele ascunse) din directorul `/app/bin` cu informații detaliate în terminal?
+    - `ls -la /app/bin`

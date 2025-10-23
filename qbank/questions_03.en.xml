@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Category for questions -->
+  <question type="category">
+    <category>
+      <text>$course$/03_advanced</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What main software development processes can be automated?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Workplace setup, build, deployment and testing]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Code writing, build and compilation]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Task complexity assessment, testing and monitoring]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Version control, documentation and code review]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is Web API in the context of automation?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A mechanism for integrating disparate services into a unified ecosystem]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A program for creating websites]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A database for web applications]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A tool for script development]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does each field mean in the crontab format <code>* * * * * command</code>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[minute hour day_of_month month day_of_week command]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[second minute hour day month command]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[hour minute day month year command]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[minute hour month day_of_month day_of_week command]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no4</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which command is used to edit the current user's crontab?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>crontab -e</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>cron -e</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>edit crontab</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>nano /etc/crontab</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no5</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the crontab entry <code>0 2 * * * /home/user/backup.sh</code> mean?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Execute every day at 2:00 AM]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Execute every 2 minutes]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Execute 2 times per day]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Execute every second day]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no6</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What data is recommended to include in logs to simplify analysis?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Timestamp, severity level, message, process identifier, metadata]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Error message, user login, password (if applicable)]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Timestamp, process identifier, commit identifier]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Severity level, hostname, code analyzer result]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no7</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What approaches are used for effective error handling in automation?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Error logging, notifications, retry attempts, fallbacks]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Error logging, user interaction, retry attempts]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Notifications, retry attempts, error ignoring]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Fallbacks, error ignoring]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no8</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>When should Python be used instead of Bash for automation?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[When working with complex data structures (JSON, XML), network requests, exception handling]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Always use only Bash]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[For web development, testing and monitoring]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Never use Python]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no9</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which Python module is used for copying files?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>shutil</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>os</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>sys</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>datetime</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no10</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What to do if a <code>UnicodeDecodeError</code> occurs when reading a file in a Python script?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Try a different encoding or handle the exception]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Skip the error line, it's not critical]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The file will be deleted, so create a backup copy]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Do nothing, the error is ignored]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no11</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the <code>crontab -l</code> command used for?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[To view current tasks]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To edit tasks]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To delete all tasks]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To start the cron service]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no12</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What advantages does Web API integration provide in CI/CD?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Linking GitHub, GitLab, Jenkins; integration with code analysis tools; project management synchronization]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Development acceleration, but only for web applications]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Test automation, communication and monitoring]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Version control; experience sharing; code recommendations]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no13</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Where does the cron scheduler look for crontab files?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[In <code>/var/spool/cron</code>, <code>/etc/anacrontab</code>, <code>/etc/cron.d</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[In the user's home directory]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[In <code>/etc/crontab</code>, <code>/usr/local/etc/cron</code>, <code>/home/cron</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[In <code>/tmp/cron</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no14</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which Python module is best suited for logging configuration?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>logging</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>print</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>sys</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>os</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no15</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does <code>os.makedirs(path, exist_ok=True)</code> mean in Python?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Creates directory with all parent folders, ignoring if it already exists]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Creates directory and raises an error if it exists]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Deletes existing directory]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Renames directory]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no16</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which tools can be used for automatic log analysis?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>grep</code>, <code>awk</code>, <code>sed</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Only text editors]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>nano</code>, <code>vim</code>, <code>emacs</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Only web browsers]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no17</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the parameter <code>sum(1 for _ in f)</code> mean in Python when counting file lines?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Efficiently counts lines without loading the entire file into memory]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Sums file contents]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Deletes lines from file]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Creates a copy of the file]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no18</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What role do cloud platforms play in team development?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Collaboration tools, version control, CI/CD pipelines]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[File storage, task writing, meeting planning]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Backup, monitoring, security, customer interaction]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Website hosting, code review, project management, customer interaction]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no19</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the <code>*/15 * * * *</code> entry mean in crontab?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Execute every 15 minutes]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Execute every 15 hours]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Execute 15 times per day]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Execute at 15:00 every day]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no20</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which Python block is used for proper exception handling in automation?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[try-except]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[if-else]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[while-break]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[for-continue]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme03_no21</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which HTTP method is commonly used to retrieve data through REST API?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[GET]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[POST]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[PUT]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[DELETE]]></text>
+    </answer>
+  </question>
+
+</quiz>

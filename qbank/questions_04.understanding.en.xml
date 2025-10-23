@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Category for questions -->
+  <question type="category">
+    <category>
+      <text>$course$/04_git/understanding</text>
+    </category>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to initialize a repository <code>MyProject</code>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git init MyProject</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to add all changed files to tracking?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git add .</text>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git add *</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to add file <code>login.js</code> to tracking?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git add login.js</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no04</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to create a commit with message "Initial commit"?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git commit -m "Initial commit"</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no05</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to create a new branch <code>feature-login</code> and switch to it?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git checkout -b feature-login</text>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git switch -c feature-login</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no06</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to view commit history in short format?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git log --oneline</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no07</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to undo changes in file <code>config.txt</code> in working directory?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git restore config.txt</text>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git checkout -- config.txt</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no08</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to add a remote repository named <code>upstream</code>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git remote add upstream &lt;url&gt;</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no09</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to fetch changes from remote branch <code>main</code> without merging?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git fetch origin main</text>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git fetch</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no10</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to get all changes from remote repository and merge immediately?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git pull</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no11</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to push local commits to remote repository?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git push</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no12</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to view repository status?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git status</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no13</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to view current branch?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git branch --show-current</text>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git branch</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no14</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to delete local branch <code>feature-old</code>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git branch -d feature-old</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme04_no15</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to view differences between working directory and last commit?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>git diff</text>
+    </answer>
+  </question>
+
+</quiz>

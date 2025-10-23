@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Category for questions -->
+  <question type="category">
+    <category>
+      <text>$course$/02_basic/understanding</text>
+    </category>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to add directory <code>/opt/myapp/bin</code> to the <code>PATH</code> variable in Bash?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>export PATH=$PATH:/opt/myapp/bin</text>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>export PATH=/opt/myapp/bin:$PATH</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to declare a variable <code>version</code> with value "2.0.5" in Bash?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>version="2.0.5"</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to declare a variable <code>app_name</code> with value "myapp" in Bash?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>app_name="myapp"</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no04</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to calculate the sum of two integers <code>a</code> and <code>b</code> in Bash and store the result in variable <code>sum</code>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>sum=$((a + b))</text>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>sum=$(echo "$a + $b" | bc)</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no05</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to calculate the product of two integers <code>a</code> and <code>b</code> in Bash and store the result in variable <code>product</code>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>product=$((a * b))</text>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>product=$(echo "$a * $b" | bc)</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no06</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to calculate the sum of two floating-point numbers <code>3.14</code> and <code>2.86</code> in Bash using <code>bc</code>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>echo "3.14 + 2.86" | bc</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no07</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to get the length of a string stored in variable <code>text</code> in Bash?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>${#text}</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no08</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to extract a substring from variable <code>str="Hello, World!"</code> starting at position 7 with length 5 in Bash?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>${str:7:5}</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no09</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to replace all occurrences of character "o" with "O" in variable <code>text="Hello, World!"</code> in Bash?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>${text//o/O}</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no10</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given the following Bash code:</p>
+<pre><code>text="Hello, World!"
+echo "${text//l/L}"
+</code></pre>
+<p>What will be printed to the screen as a result of executing this code?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>HeLLo, WorLd!</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no11</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to add element "orange" to an existing array <code>fruits</code> in Bash?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>fruits+=("orange")</text>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>fruits[${#fruits[@]}]="orange"</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no12</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to delete file <code>installation.log</code> in the terminal?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>rm installation.log</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no13</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to create file <code>config.txt</code> with content <code>APP_NAME=app</code> in the terminal?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>echo "APP_NAME=app" &gt; config.txt</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no14</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to create directory <code>logs</code> and navigate into it in the terminal?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>mkdir logs &amp;&amp; cd logs</text>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>mkdir logs; cd logs</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme02_no15</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How to list files (including hidden ones) in directory <code>/app/bin</code> with detailed information in the terminal?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>ls -la /app/bin</text>
+    </answer>
+  </question>
+
+</quiz>

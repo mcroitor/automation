@@ -1,5 +1,7 @@
 # Questions on "Scripting Fundamentals"
 
+## Knowledge
+
 1. What are environment variables?
    - [x] Dynamic values that can affect the behavior of processes in the operating system
    - [ ] Static values stored in configuration files
@@ -110,3 +112,48 @@
     - [ ] `%`
     - [ ] `*`
     - [ ] `@`
+
+## Understanding
+
+1. How to add directory `/opt/myapp/bin` to the `PATH` variable in Bash?
+   - `export PATH=$PATH:/opt/myapp/bin`
+   - `export PATH=/opt/myapp/bin:$PATH`
+2. How to declare a variable `version` with value "2.0.5" in Bash?
+   - `version="2.0.5"`
+3. How to declare a variable `app_name` with value "myapp" in Bash?
+   - `app_name="myapp"`
+4. How to calculate the sum of two integers `a` and `b` in Bash and store the result in variable `sum`?
+   - `sum=$((a + b))`
+   - `sum=$(echo "$a + $b" | bc)`
+5. How to calculate the product of two integers `a` and `b` in Bash and store the result in variable `product`?
+   - `product=$((a * b))`
+   - `product=$(echo "$a * $b" | bc)`
+6. How to calculate the sum of two floating-point numbers `3.14` and `2.86` in Bash using `bc`?
+   - `echo "3.14 + 2.86" | bc`
+7. How to get the length of a string stored in variable `text` in Bash?
+   - `${#text}`
+8. How to extract a substring from variable `str="Hello, World!"` starting at position 7 with length 5 in Bash?
+   - `${str:7:5}`
+9. How to replace all occurrences of character "o" with "O" in variable `text="Hello, World!"` in Bash?
+   - `${text//o/O}`
+10. Given the following Bash code:
+
+    ```bash
+    text="Hello, World!"
+    echo "${text//l/L}"
+    ```
+
+    What will be printed to the screen as a result of executing this code?
+    - `HeLLo, WorLd!`
+11. How to add element "orange" to an existing array `fruits` in Bash?
+    - `fruits+=("orange")`
+    - `fruits[${#fruits[@]}]="orange"`
+12. How to delete file `installation.log` in the terminal?
+    - `rm installation.log`
+13. How to create file `config.txt` with content `APP_NAME=app` in the terminal?
+    - `echo "APP_NAME=app" > config.txt`
+14. How to create directory `logs` and navigate into it in the terminal?
+    - `mkdir logs && cd logs`
+    - `mkdir logs; cd logs`
+15. How to list files (including hidden ones) in directory `/app/bin` with detailed information in the terminal?
+    - `ls -la /app/bin`

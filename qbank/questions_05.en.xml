@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Category for questions -->
+  <question type="category">
+    <category>
+      <text>$course$/05_pipelines</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the abbreviation CI mean in the context of software development?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Continuous Integration</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Computer Integration</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Code Implementation</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Central Intelligence</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the main goal of Continuous Integration (CI)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Integration of code changes into a shared codebase with automated checks</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Test automation only at the release stage</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Creating code backups for recovery in case of failures</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Source code version management</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the difference between Continuous Delivery and Continuous Deployment?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Continuous Delivery prepares code for release but requires manual deployment; Continuous Deployment automatically deploys to production</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Continuous Delivery includes automatic deployment to production, Continuous Deployment does not</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>They are the same concept</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Continuous Deployment only works with containers</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no04</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which stage usually does NOT belong to a standard CI/CD pipeline?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Application architecture planning</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Artifact building</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Automated testing</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Deployment to test environment</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no05</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is NOT an artifact in the CI/CD context?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Source code in repository</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Compiled JAR file</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Docker image</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Documentation archive</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no06</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which file is used to define a pipeline in GitHub Actions?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>.github/workflows/workflow-name.yml</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>.github/ci.yml</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pipeline.yml</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>github-actions.yml</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no07</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What programming language is used to write Jenkinsfile?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Groovy</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Python</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>JavaScript</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Java</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no08</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which file is used to define a pipeline in GitLab CI?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>.gitlab-ci.yml</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>.gitlab/pipeline.yml</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>gitlab-ci.yaml</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pipeline.gitlab</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no09</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does "Infrastructure as Code" (IaC) mean in the DevOps context?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Provisioning and managing infrastructure through code instead of manual processes</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Writing infrastructure code in Java</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Creating infrastructure only in the cloud</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using only containers for deployment</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no10</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the main advantage of Continuous Integration?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Fast detection and fixing of errors</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Reducing the number of developers in the team</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Eliminating the need for testing</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Automatic code writing</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no11</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What are "quality gates" in a CI/CD pipeline?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Automated quality thresholds that stop the pipeline when criteria are violated</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Physical devices for access control</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Data encryption tools</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Backup systems</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no12</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What are the three main components described in GitHub Actions workflow?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Events, jobs, steps</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Build, test, deploy</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Developers, testers, administrators</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Code, documentation, tests</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no13</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is a nightly build?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Scheduled build, usually daily, to reduce CI server load</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Build that runs only at night</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Build only for final product version</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Build that runs only during critical errors</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no14</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>The process of automatic integration of code changes into a shared codebase several times a day followed by automated tests is called:</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Continuous Integration</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Continuous Deployment</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Continuous Delivery</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Continuous Development</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no15</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the "Code Quality Analysis" stage include in a CI/CD pipeline?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Static analysis to check compliance with quality and security standards</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Program code syntax checking</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Software product performance checking</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Code test coverage measurement</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no16</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which DevOps practice involves externalizing configuration to external files?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Configuration management</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Infrastructure as Code</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Container strategy</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Monitoring</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no17</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What three phases does each CI/CD pipeline stage include?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Preparation, execution, result processing</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Planning, execution, analysis</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Build, test, deploy</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Development, testing, release</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no18</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which CI/CD tool is originally designed as a self-hosted solution and requires installation on own servers?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Jenkins</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>GitHub Actions</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Azure DevOps Services</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Travis CI</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no19</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the term "Pipeline as Code" mean?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Defining CI/CD pipelines through configuration files in the repository</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Writing pipelines in C programming language</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Creating pipelines only for code</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Automatic pipeline generation</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no20</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which disadvantage is NOT characteristic of Continuous Integration?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Decreased code quality</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Additional infrastructure and support costs</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Need for dedicated computing resources</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Team development skill requirements</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme05_no21</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>The practice of automatically preparing code for release with the ability to deploy at any time, but with manual approval for production environment is called:</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Continuous Delivery</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Continuous Integration</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Continuous Deployment</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Continuous Distribution</text>
+    </answer>
+  </question>
+
+</quiz>
