@@ -30,15 +30,21 @@
       - [3. Metrics Plugin](#3-metrics-plugin)
       - [4. Blue Ocean](#4-blue-ocean)
     - [Интеграция с внешними системами мониторинга](#интеграция-с-внешними-системами-мониторинга)
-      - [1. Prometheus Integration](#1-prometheus-integration)
-      - [2. Grafana Dashboards](#2-grafana-dashboards)
-      - [3. ELK Stack (Elasticsearch, Logstash, Kibana)](#3-elk-stack-elasticsearch-logstash-kibana)
-      - [4. Slack/MS Teams Notifications](#4-slackms-teams-notifications)
+      - [Slack/MS Teams Notifications](#slackms-teams-notifications)
   - [Настройка агентов Jenkins](#настройка-агентов-jenkins)
     - [Постоянные агенты](#постоянные-агенты)
+      - [Настройка постоянного агента через SSH](#настройка-постоянного-агента-через-ssh)
+        - [Шаг 1: Подготовка агента](#шаг-1-подготовка-агента)
+        - [Шаг 2: Создание пользователя Jenkins](#шаг-2-создание-пользователя-jenkins)
+        - [Шаг 3: Настройка в Jenkins Web UI](#шаг-3-настройка-в-jenkins-web-ui)
+        - [Шаг 4: Добавление SSH credentials](#шаг-4-добавление-ssh-credentials)
     - [Динамические агенты](#динамические-агенты)
-    - [Подключение агентов к Jenkins Master](#подключение-агентов-к-jenkins-master)
-    - [Мониторинг загрузки агентов](#мониторинг-загрузки-агентов)
+      - [Настройка Docker агентов](#настройка-docker-агентов)
+        - [Шаг 1: Установка Docker Plugin](#шаг-1-установка-docker-plugin)
+        - [Шаг 2: Настройка Docker Cloud](#шаг-2-настройка-docker-cloud)
+        - [Шаг 3: Создание Docker Template](#шаг-3-создание-docker-template)
+        - [Шаг 4: Пример использования различных Docker образов](#шаг-4-пример-использования-различных-docker-образов)
+    - [Подключение агентов к контроллеру Jenkins](#подключение-агентов-к-контроллеру-jenkins)
     - [Best Practices для масштабирования](#best-practices-для-масштабирования)
   - [Библиография](#библиография)
 
@@ -769,96 +775,7 @@ pipeline {
 
 ### Интеграция с внешними системами мониторинга
 
-#### 1. Prometheus Integration
-
-Экспорт метрик в Prometheus для централизованного мониторинга:
-
-```groovy
-@Library('pipeline-metrics') _
-
-pipeline {
-    agent any
-    
-    stages {
-        stage('Build') {
-            steps {
-                script {
-                    metricsStart('build_stage')
-                    sh 'npm run build'
-                    metricsEnd('build_stage')
-                }
-            }
-        }
-    }
-    
-    post {
-        always {
-            script {
-                // Отправка метрик в Prometheus Pushgateway
-                def metrics = """
-                    jenkins_build_duration_seconds{job="${env.JOB_NAME}",result="${currentBuild.result}"} ${currentBuild.duration/1000}
-                    jenkins_build_number{job="${env.JOB_NAME}"} ${env.BUILD_NUMBER}
-                """
-                
-                sh """
-                    echo '${metrics}' | curl --data-binary @- \\
-                    http://pushgateway:9091/metrics/job/jenkins/instance/${env.JOB_NAME}
-                """
-            }
-        }
-    }
-}
-```
-
-#### 2. Grafana Dashboards
-
-Создание дашбордов для визуализации метрик Jenkins:
-
-- Время выполнения сборок по времени
-- Success rate по проектам
-- Использование агентов
-- Очередь сборок
-
-**Пример запроса Prometheus:**
-
-```promql
-# Среднее время сборки за последний час
-rate(jenkins_build_duration_seconds_sum[1h]) / 
-rate(jenkins_build_duration_seconds_count[1h])
-
-# Процент успешных сборок
-sum(jenkins_build_success_total) / 
-sum(jenkins_build_total) * 100
-```
-
-#### 3. ELK Stack (Elasticsearch, Logstash, Kibana)
-
-Централизованный сбор и анализ логов:
-
-```groovy
-pipeline {
-    agent any
-    stages {
-        stage('Build') {
-            steps {
-                sh 'npm run build 2>&1 | tee build.log'
-            }
-        }
-    }
-    post {
-        always {
-            // Отправка логов в Logstash
-            sh '''
-                curl -X POST "http://logstash:5044" \\
-                -H "Content-Type: application/json" \\
-                -d @build.log
-            '''
-        }
-    }
-}
-```
-
-#### 4. Slack/MS Teams Notifications
+#### Slack/MS Teams Notifications
 
 Автоматические уведомления о проблемах производительности:
 
@@ -893,7 +810,7 @@ pipeline {
 
 ## Настройка агентов Jenkins
 
-Агенты Jenkins (ранее называемые "slaves" или "nodes") — это отдельные машины или контейнеры, которые выполняют задачи сборки, параллельно с master-узлом или вместо него. Не рекомендуется запускать сборки непосредственно на master-узле из соображений безопасности и производительности.
+Агенты Jenkins — это отдельные машины или контейнеры, которые выполняют задачи сборки, параллельно с узлом-контроллером или вместо него. Не рекомендуется запускать сборки непосредственно на узле-контроллере из соображений безопасности и производительности.
 
 Jenkins предлагает следующие типы агентов:
 
@@ -902,7 +819,63 @@ Jenkins предлагает следующие типы агентов:
 
 ### Постоянные агенты
 
-Постоянные агенты это машины, которые всегда работают и подключены к Jenkins master. Они могут быть физическими серверами, виртуальными машинами или контейнерами, которые настроены для выполнения задач сборки.
+Постоянные агенты это машины, которые всегда работают и подключены к контроллеру Jenkins. Они могут быть физическими серверами, виртуальными машинами или контейнерами, которые настроены для выполнения задач сборки.
+
+#### Настройка постоянного агента через SSH
+
+##### Шаг 1: Подготовка агента
+
+На целевой машине убедитесь, что установлены Java и SSH сервер:
+
+```bash
+# Ubuntu/Debian
+sudo apt update
+sudo apt install openjdk-11-jre-headless openssh-server
+
+# CentOS/RHEL
+sudo yum install java-11-openjdk-headless openssh-server
+sudo systemctl enable sshd
+sudo systemctl start sshd
+```
+
+##### Шаг 2: Создание пользователя Jenkins
+
+```bash
+# Создание пользователя
+sudo useradd -m -s /bin/bash jenkins
+
+# Создание SSH ключа для подключения
+sudo -u jenkins ssh-keygen -t rsa -b 4096 -f /home/jenkins/.ssh/jenkins_key
+
+# Настройка авторизованных ключей
+sudo -u jenkins cp /home/jenkins/.ssh/jenkins_key.pub /home/jenkins/.ssh/authorized_keys
+sudo -u jenkins chmod 600 /home/jenkins/.ssh/authorized_keys
+```
+
+##### Шаг 3: Настройка в Jenkins Web UI
+
+1. Перейдите в `Manage Jenkins > Manage Nodes and Clouds`
+2. Нажмите `New Node`
+3. Заполните параметры:
+   - **Name**: `static-agent-01`
+   - **Type**: `Permanent Agent`
+   - **Number of executors**: `2` (количество параллельных задач)
+   - **Remote root directory**: `/home/jenkins/workspace`
+   - **Labels**: `linux static build-agent`
+   - **Usage**: `Use this node as much as possible`
+   - **Launch method**: `Launch agents via SSH`
+   - **Host**: IP адрес или hostname агента
+   - **Credentials**: добавьте SSH ключ из шага 2
+
+##### Шаг 4: Добавление SSH credentials
+
+1. В разделе Credentials нажмите `Add`
+2. Выберите `SSH Username with private key`
+3. Заполните:
+   - **Username**: `jenkins`
+   - **Private Key**: скопируйте содержимое `/home/jenkins/.ssh/jenkins_key`
+   - **ID**: `jenkins-ssh-key`
+   - **Description**: `Jenkins SSH Key for Static Agents`
 
 Пример использования постоянного агента в Jenkinsfile:
 
@@ -910,11 +883,12 @@ Jenkins предлагает следующие типы агентов:
 // Использование постоянного агента
 pipeline {
     agent {
-        label 'linux-build-server'
+        label 'static-agent-01'
     }
     stages {
         stage('Build') {
             steps {
+                sh 'echo "Building on static agent: ${NODE_NAME}"'
                 sh 'make build'
             }
         }
@@ -938,22 +912,66 @@ pipeline {
 
 Динамические агенты это агенты, создаваемые по требованию. Они могут быть реализованы с помощью облачных провайдеров, контейнеров или оркестраторов, таких как Kubernetes.
 
-Пример использования динамических Docker агентов:
+#### Настройка Docker агентов
 
-**Docker Agents:**
+##### Шаг 1: Установка Docker Plugin
+
+1. Перейдите в `Manage Jenkins > Manage Plugins`
+2. Найдите и установите `Docker Plugin`
+3. Перезапустите Jenkins
+
+##### Шаг 2: Настройка Docker Cloud
+
+1. Перейдите в `Manage Jenkins > Manage Nodes and Clouds > Configure Clouds`
+2. Нажмите `Add a new cloud` и выберите `Docker`
+3. Заполните настройки:
+   - **Name**: `docker-cloud`
+   - **Docker Host URI**: `unix:///var/run/docker.sock` (если Jenkins на том же хосте) или `tcp://docker-host:2376`
+   - **Enabled**: установите флажок
+
+##### Шаг 3: Создание Docker Template
+
+В разделе Docker Agent templates добавьте новый template:
+
+- **Labels**: `docker-node node-js python-build`
+- **Name**: `docker-agent-{0}` (автогенерируемое имя)
+- **Docker Image**: `jenkins/agent:latest`
+- **Instance Capacity**: `10`
+- **Remote File System Root**: `/home/jenkins/agent`
+
+**Дополнительные настройки контейнера:**
+
+```bash
+# Registry Authentication (если нужно)
+Registry URL: https://index.docker.io/v1/
+Credentials: (добавить Docker Hub credentials)
+
+# Container settings
+Memory Limit: 1024m
+CPU Limit: 1.0
+Network: bridge
+
+# Volumes
+/var/run/docker.sock:/var/run/docker.sock
+/tmp:/tmp
+```
+
+##### Шаг 4: Пример использования различных Docker образов
 
 ```groovy
+// Использование конкретного Docker образа
 pipeline {
     agent {
         docker {
             image 'node:16-alpine'
-            label 'docker-host'
-            args '-v /tmp:/tmp'
+            label 'docker-cloud'
+            args '-v /tmp:/tmp -u root'
         }
     }
     stages {
-        stage('Build') {
+        stage('Build Node.js') {
             steps {
+                sh 'npm --version'
                 sh 'npm ci && npm run build'
             }
         }
@@ -961,22 +979,56 @@ pipeline {
 }
 ```
 
-**Преимущества:**
+**Пример с разными агентами для разных стадий:**
 
-- Автоматическое масштабирование
-- Изоляция сборок
-- Оптимизация затрат (pay-per-use)
-- Быстрое обновление окружений
+```groovy
+pipeline {
+    agent none
+    
+    stages {
+        stage('Build Frontend') {
+            agent {
+                docker {
+                    image 'node:16-alpine'
+                    label 'docker-cloud'
+                }
+            }
+            steps {
+                sh 'npm ci && npm run build'
+            }
+        }
+        
+        stage('Build Backend') {
+            agent {
+                docker {
+                    image 'maven:3.8-openjdk-11'
+                    label 'docker-cloud'
+                    args '-v /root/.m2:/root/.m2'
+                }
+            }
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+        
+        stage('Test with Python') {
+            agent {
+                docker {
+                    image 'python:3.9-slim'
+                    label 'docker-cloud'
+                }
+            }
+            steps {
+                sh 'pip install pytest && pytest'
+            }
+        }
+    }
+}
+```
 
-**Недостатки:**
+### Подключение агентов к контроллеру Jenkins
 
-- Время на создание агента
-- Зависимость от облачной инфраструктуры
-- Дополнительная сложность настройки
-
-### Подключение агентов к Jenkins Master
-
-Агенты могут быть подключены к Jenkins master различными способами:
+Агенты могут быть подключены к контроллеру Jenkins различными способами:
 
 - **SSH Launch Method**: Подключение через SSH для Unix-подобных систем.
 - **JNLP (Java Network Launch Protocol)**: Используется для подключения агентов, работающих за файерволом или в облаке.
@@ -992,33 +1044,6 @@ pipeline {
 - Метод запуска (Launch Method)
 - Путь к рабочей директории (Remote root directory)
 
-### Мониторинг загрузки агентов
-
-Отслеживание утилизации агентов:
-
-```groovy
-// Скрипт для мониторинга агентов
-import jenkins.model.Jenkins
-import hudson.model.Node
-
-def jenkins = Jenkins.instance
-
-jenkins.nodes.each { node ->
-    def computer = node.toComputer()
-    println "Node: ${node.name}"
-    println "  Executors: ${node.numExecutors}"
-    println "  Busy Executors: ${computer.countBusy()}"
-    println "  Idle: ${computer.isIdle()}"
-    println "  Offline: ${computer.isOffline()}"
-    
-    if (computer.monitorData != null) {
-        def monitors = computer.monitorData
-        println "  Disk Space: ${monitors['hudson.node_monitors.DiskSpaceMonitor']}"
-        println "  Response Time: ${monitors['hudson.node_monitors.ResponseTimeMonitor']}"
-    }
-}
-```
-
 ### Best Practices для масштабирования
 
 - **Используйте ephemeral agents** для большинства сборок
@@ -1033,23 +1058,16 @@ jenkins.nodes.each { node ->
 
 1. Голдратт, Элияху М. **Цель: процесс непрерывного совершенствования** / Пер. с англ. - М.: Альпина Паблишер, 2021. - 400 с.
    - Оригинальная работа по теории ограничений, где впервые описаны 5 шагов фокусирования
-
 2. Голдратт, Элияху М., Кокс, Джефф. **Цель-2: дело не в везении** / Пер. с англ. - М.: Альпина Паблишер, 2020. - 512 с.
    - Практическое применение TOC в различных областях бизнеса
-
 3. Kim, Gene, et al. **The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations** - IT Revolution Press, 2016.
    - Применение принципов теории ограничений в DevOps практиках
-
 4. Humble, Jez; Farley, David. **Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation** - Addison-Wesley Professional, 2010.
    - Фундаментальная работа о непрерывной доставке и оптимизации pipeline
-
 5. [Теория ограничений, Wikipedia](https://ru.wikipedia.org/wiki/Теория_ограничений)
-
 6. [Jenkins Documentation - Distributed Builds](https://www.jenkins.io/doc/book/scaling/)
    - Официальная документация по масштабированию Jenkins
-
 7. [Theory of Constraints Institute](https://www.tocico.org/)
    - Официальный ресурс по теории ограничений с актуальными материалами
-
 8. [Jenkins Performance Plugin Documentation](https://plugins.jenkins.io/performance/)
    - Документация по плагину для анализа производительности
