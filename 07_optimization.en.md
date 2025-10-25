@@ -810,7 +810,7 @@ pipeline {
 
 ## Jenkins Agent Configuration
 
-Jenkins agents (formerly called "slaves" or "nodes") are separate machines or containers that execute build tasks, either in parallel with the controller node or instead of it. It is not recommended to run builds directly on the controller node for security and performance reasons.
+Jenkins agents are separate machines or containers that execute build tasks, either in parallel with the controller node or instead of it. It is not recommended to run builds directly on the controller node for security and performance reasons.
 
 Jenkins offers the following types of agents:
 
