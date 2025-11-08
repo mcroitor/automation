@@ -1,0 +1,267 @@
+// Jenkinsfile-secure - pipeline for secure environment
+pipeline {
+    agent {
+        label 'secure-agents'  // Use only approved agents
+    }
+    
+    options {
+        timeout(time: 60, unit: 'MINUTES')
+        buildDiscarder(logRotator(numToKeepStr: '30'))
+        skipStagesAfterUnstable()
+    }
+    
+    environment {
+        // Use internal repositories
+        SECURE_REGISTRY = "registry.internal.secure"
+        APPROVED_BASE_IMAGES = "registry.internal.secure/approved"
+        SECURITY_TOOLS_IMAGE = "registry.internal.secure/security-tools:latest"
+    }
+    
+    stages {
+        stage('Security Scan') {
+            steps {
+                script {
+                    echo "Starting source code security scanning..."
+                    
+                    // Use container with security tools
+                    docker.image("${SECURITY_TOOLS_IMAGE}").inside {
+                        // Static security analysis
+                        sh 'bandit -r . -f json -o bandit-report.json || true'
+                        sh 'semgrep --config=auto --json --output=semgrep-report.json .'
+                        
+                        // Check dependencies for vulnerabilities
+                        sh 'safety check --json --output safety-report.json'
+                        
+                        // Secret detection
+                        sh 'truffleHog --regex --entropy=False . --json > trufflehog-report.json'
+                        
+                        // Analyze results
+                        sh 'python3 /tools/security-gate.py --reports bandit-report.json,semgrep-report.json,safety-report.json,trufflehog-report.json'
+                    }
+                }
+                
+                // Archive reports
+                archiveArtifacts artifacts: '*-report.json', allowEmptyArchive: false
+                
+                // Publish scan results
+                publishHTML([
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: '.',
+                    reportFiles: 'bandit-report.json',
+                    reportName: 'Security Scan Report'
+                ])
+            }
+            post {
+                failure {
+                    error "Critical security vulnerabilities detected"
+                }
+            }
+        }
+        
+        stage('Secure Build') {
+            steps {
+                script {
+                    echo "Starting secure application build..."
+                    
+                    // Validate build environment
+                    sh '/tools/validate-build-environment.sh'
+                    
+                    // Verify source code signature
+                    def commitSigned = sh(
+                        script: 'git verify-commit HEAD',
+                        returnStatus: true
+                    )
+                    if (commitSigned != 0) {
+                        error "Code changes are not digitally signed!"
+                    }
+                    
+                    docker.image("${APPROVED_BASE_IMAGES}/build-tools:latest").inside {
+                        // Build using only approved dependencies
+                        sh 'cp /approved-deps/requirements.txt.approved requirements.txt'
+                        sh 'pip install --index-url https://pypi.internal.secure/simple/ -r requirements.txt'
+                        
+                        // Compile application
+                        sh 'python setup.py build'
+                        
+                        // Create signed image
+                        sh """
+                            docker build -t ${SECURE_REGISTRY}/app:${BUILD_NUMBER} .
+                            docker push ${SECURE_REGISTRY}/app:${BUILD_NUMBER}
+                        """
+                        
+                        // Sign image using cosign
+                        withCredentials([file(credentialsId: 'image-signing-key', variable: 'SIGNING_KEY')]) {
+                            sh "cosign sign --key \${SIGNING_KEY} ${SECURE_REGISTRY}/app:${BUILD_NUMBER}"
+                        }
+                    }
+                }
+                
+                archiveArtifacts artifacts: 'dist/**', allowEmptyArchive: false
+            }
+        }
+        
+        stage('Container Security Test') {
+            steps {
+                script {
+                    echo "Scanning container security..."
+                    
+                    docker.image("${SECURITY_TOOLS_IMAGE}").inside {
+                        // Scan image vulnerabilities
+                        sh "trivy image --format json --output trivy-report.json ${SECURE_REGISTRY}/app:${BUILD_NUMBER}"
+                        
+                        // Check Dockerfile configuration
+                        sh 'hadolint Dockerfile > hadolint-report.txt'
+                        
+                        // Verify security policies
+                        sh 'conftest verify --policy /policies/container-security.rego Dockerfile'
+                        
+                        // Analyze results
+                        sh 'python3 /tools/container-security-gate.py --trivy trivy-report.json --hadolint hadolint-report.txt'
+                    }
+                }
+                
+                archiveArtifacts artifacts: '*-report.*', allowEmptyArchive: false
+            }
+        }
+        
+        stage('Deploy to Staging') {
+            when {
+                branch 'main'
+            }
+            steps {
+                script {
+                    echo "Deploying to secure staging environment..."
+                    
+                    // Verify image integrity
+                    withCredentials([file(credentialsId: 'image-verify-key', variable: 'VERIFY_KEY')]) {
+                        sh "cosign verify --key \${VERIFY_KEY} ${SECURE_REGISTRY}/app:${BUILD_NUMBER}"
+                    }
+                    
+                    // Validate Kubernetes manifests
+                    sh 'conftest verify --policy /policies/k8s-security.rego k8s/'
+                    
+                    // Apply with strict validation
+                    withCredentials([kubeconfigFile(credentialsId: 'staging-kubeconfig', variable: 'KUBECONFIG')]) {
+                        sh '''
+                            kubectl apply -f k8s/ --dry-run=server --validate=true
+                            kubectl apply -f k8s/
+                            kubectl rollout status deployment/secure-app -n secure-staging --timeout=300s
+                        '''
+                    }
+                }
+            }
+        }
+        
+        stage('Security Validation') {
+            steps {
+                script {
+                    echo "Performing security checks on deployed application..."
+                    
+                    docker.image("${SECURITY_TOOLS_IMAGE}").inside {
+                        // Port scanning
+                        sh 'nmap -sS -O staging.internal.secure > nmap-report.txt'
+                        
+                        // SSL/TLS configuration check
+                        sh 'sslscan staging.internal.secure:443 > sslscan-report.txt'
+                        
+                        // Penetration testing
+                        sh 'zap-baseline.py -t https://staging.internal.secure -J zap-report.json'
+                        
+                        // Policy compliance validation
+                        sh 'python3 /tools/compliance-check.py --endpoint https://staging.internal.secure'
+                    }
+                }
+                
+                archiveArtifacts artifacts: '*-report.*', allowEmptyArchive: false
+            }
+        }
+        
+        stage('Deploy to Production') {
+            when {
+                allOf {
+                    branch 'main'
+                    // Additional user verification
+                    expression { 
+                        return env.BUILD_USER_ID?.contains('deploy-prod') 
+                    }
+                }
+            }
+            input {
+                message "Confirm deployment to production"
+                ok "Deploy"
+                parameters {
+                    booleanParam(
+                        name: 'EMERGENCY_DEPLOY',
+                        defaultValue: false,
+                        description: 'Emergency deployment (skip additional checks)'
+                    )
+                }
+            }
+            steps {
+                script {
+                    echo "Deploying to production with maximum security measures..."
+                    
+                    // Final validation of all security artifacts
+                    if (!params.EMERGENCY_DEPLOY) {
+                        sh '/tools/final-security-validation.sh'
+                    }
+                    
+                    // Blue-Green deployment for minimal downtime
+                    withCredentials([kubeconfigFile(credentialsId: 'production-kubeconfig', variable: 'KUBECONFIG')]) {
+                        sh "/tools/blue-green-deploy.sh ${SECURE_REGISTRY}/app:${BUILD_NUMBER}"
+                        
+                        // Health check
+                        sh '/tools/production-health-check.sh'
+                    }
+                }
+            }
+            post {
+                success {
+                    // Send successful deployment notification
+                    slackSend(
+                        channel: '#deployments',
+                        color: 'good',
+                        message: "✅ Production deployment completed successfully: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
+                    )
+                }
+                failure {
+                    // Send deployment failure notification
+                    slackSend(
+                        channel: '#deployments',
+                        color: 'danger',
+                        message: "❌ Production deployment failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
+                    )
+                }
+            }
+        }
+    }
+    
+    post {
+        always {
+            // Clean up temporary files
+            sh 'find . -name "*.tmp" -type f -delete'
+            
+            // Send metrics to monitoring system
+            sh """
+                curl -X POST ${METRICS_ENDPOINT}/build-metrics \\
+                     -H "Content-Type: application/json" \\
+                     -d '{
+                       "job": "${env.JOB_NAME}",
+                       "build": "${env.BUILD_NUMBER}",
+                       "status": "${currentBuild.currentResult}",
+                       "duration": "${currentBuild.duration}"
+                     }'
+            """
+        }
+        failure {
+            // Additional actions on failure
+            emailext(
+                to: 'security-team@company.com',
+                subject: "Build failure in secure environment: ${env.JOB_NAME}",
+                body: "Build ${env.BUILD_NUMBER} failed. Security analysis required."
+            )
+        }
+    }
+}
