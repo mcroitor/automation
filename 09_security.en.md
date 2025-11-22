@@ -331,16 +331,6 @@ database:
 api:
   jenkins_token: "jenkins_api_token_here"
   slack_webhook: "https://hooks.slack.com/services/..."
-```yaml
-# config.yaml - dangerous practice
-database:
-  host: db.example.com
-  username: admin
-  password: "MySuperSecretPassword123!"
-  
-api:
-  jenkins_token: "jenkins_api_token_here"
-  slack_webhook: "https://hooks.slack.com/services/..."
 ```
 
 Another insidious situation arises when secrets end up in application logs. This happens when developers inadvertently log variables containing sensitive information:
