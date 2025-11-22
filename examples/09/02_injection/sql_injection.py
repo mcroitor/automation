@@ -9,7 +9,6 @@
 # База данных выполнит удаление таблицы пользователей!
 # Исправленный код с использованием параметризованных запросов
 
-import sqlite3
 
 def get_user_by_name(db_connection, user_name):
     """Retrieve user information safely using parameterized queries"""
