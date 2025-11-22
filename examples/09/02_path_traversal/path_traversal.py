@@ -4,3 +4,6 @@
 def read_user_file(filename):
     with open(f"/app/uploads/{filename}", 'r') as f:
         return f.read()
+    
+
+# /app/uploads/../../etc/passwd -> /etc/passwd
