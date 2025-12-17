@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <!-- Category for questions -->
+    <question type="category">
+        <category>
+            <text>$course$/06_5_jenkins_agents</text>
+        </category>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no01</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>A permanent Jenkins agent is:</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>An agent that is always available to perform tasks</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>An agent that is created on demand for each build</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>An agent running directly on the Jenkins controller</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>An agent that performs the same tasks repeatedly</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no02</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>A dynamic Jenkins agent is:</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>An agent that is created on demand to perform tasks</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>An agent that is always available to perform tasks</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>An agent running directly on the Jenkins controller</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>An agent that performs different tasks depending on the load</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no03</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Why is it not recommended to run builds directly on the controller node?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>Builds may gain access to the controller's configuration and data</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>The controller is physically incapable of performing build tasks</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>It is technically impossible to implement in Jenkins</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>It requires purchasing additional commercial licenses</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no04</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>What is the advantage of permanent agents?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>Fast build startup</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Automatic lifecycle management</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Efficient resource utilization</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Easy scalability</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no05</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>What is the advantage of dynamic agents?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>Efficient resource utilization</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Predictable performance</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Fast build startup</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Manual management</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no06</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Which of the following protocols can be used for communication between the controller and the agent?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>JNLP</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>HTTPS</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>SFTP</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>FTP</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no07</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Which of the following protocols can be used for communication between the controller and the agent?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>SSH</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>HTTPS</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>TCP</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>UDP</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no08</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>What needs to be installed on the target machine to set up a permanent agent via SSH?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>SSH server</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>SSH client</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>FTP server</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Docker</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no09</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>What needs to be installed on the agent machine for Jenkins to work?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>JRE or JDK</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Only Jenkins CLI</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Docker required</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Git required</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no10</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Which method of using Docker from a Jenkins agent does NOT exist?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>Via FTP</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Via Unix socket</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Via TCP</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Running Docker inside a Docker container</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no11</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Which port is used by the Docker API without TLS?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>2375</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>2376</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>8080</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>50000</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no12</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Which port is used by the Docker API with TLS?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>2376</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>2375</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>8080</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>50000</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no13</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Which port is used by Jenkins agents to connect to the controller via JNLP?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>50000</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>2375</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>2376</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>8080</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no14</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Which URI format is used to connect to the Docker host socket?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>unix:///var/run/docker.sock</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>tcp://localhost:2375</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>file:///var/run/docker.sock</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>tcp://host.docker.internal:2375</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no15</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Which address is used to access the Docker host from a Jenkins container?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>host.docker.internal</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>localhost</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>docker.host</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>container.host</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no16</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Which official Jenkins image is recommended for connecting agents via JNLP?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>jenkins/inbound-agent</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>jenkins/ssh-agent</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>jenkins/agent</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>jenkins/docker-agent</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no17</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>What do the base official Jenkins agent images (jenkins/inbound-agent) NOT contain?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>Build tools (Maven, Gradle, npm)</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>JRE or JDK</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Jenkins agent for connecting to the controller</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Base Linux operating system</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no18</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>For which types of tasks is it recommended to reserve permanent agents?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>For critical tasks</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>For all types of builds</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Only for testing</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>For fast builds</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no19</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>What is recommended to use for differentiating between different types of builds on agents?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>Labels</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Agent names</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>IP addresses</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Port numbers</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no20</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>When is it useful to use permanent Jenkins agents?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>For long-running or resource-intensive tasks</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>For short and fast tasks</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>For low-priority tasks</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>For tasks that do not require resources</text>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>theory_theme06_5_no21</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Which of the following methods is NOT a way to connect dynamic Jenkins agents?</p>]]></text>
+        </questiontext>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100" format="html">
+            <text>HTTPS</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>JNLP</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>SSH</text>
+        </answer>
+        <answer fraction="0" format="html">
+            <text>Docker</text>
+        </answer>
+    </question>
+</quiz>

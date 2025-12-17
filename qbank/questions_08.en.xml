@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<quiz>
+  <!-- Category for questions -->
+  <question type="category">
+    <category>
+      <text>$course$/08_iac</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is Infrastructure as Code (IaC)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The practice of managing infrastructure through configuration files</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A tool for automatically writing application code in different languages</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A method of physically configuring servers in a data center manually</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A set of scripts written by developers outside of working hours</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which approach describes the desired state of the infrastructure, and the system itself determines how to achieve it?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Declarative</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Imperative</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Procedural</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Object-oriented</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which IaC tool uses YAML language and works without agents on target systems?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Ansible</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Terraform</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Puppet</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Chef</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no04</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which language is used in Terraform to describe infrastructure?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>HCL</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>YAML</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>JSON</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Ruby</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no05</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is idempotence in the context of IaC?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A property of an operation where repeated execution does not change the result</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The ability of a system to scale horizontally under increased resource load</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The ability to safely roll back infrastructure changes without data loss or service
+        disruption</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The practice of automatic configuration backup for recovery after failure</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no06</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the DRY principle mean in the context of IaC?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Don't Repeat Yourself</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Do Repeat Yourself</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Data Redundancy Yield</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Dynamic Resource Yield</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no07</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is "drift detection" in IaC?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Detecting discrepancies between the code and the actual state of resources</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Automatic scaling of resources based on current load</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Backup of infrastructure configurations for recovery in case of failure</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Monitoring performance and availability of servers in real-time</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no08</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What type of tasks does Ansible primarily perform?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Configuration management</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Infrastructure provisioning</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Resource monitoring</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Backup</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no09</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is a "resource" in Terraform?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The basic building block of infrastructure</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Any data file used in the project</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>CLI command</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Cloud service provider</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no10</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Deployment strategy where two identical production environments are maintained, switching between which ensures safe deployment:</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Blue-Green Deployment</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Canary Deployment</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Rolling Update</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Immutable Infrastructure</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no11</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Ansible file containing a list of target hosts and their grouping for management:</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Inventory</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Playbook</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Role</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Module</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no12</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is provisioning in the context of IaC?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Automatic creation and configuration of infrastructure resources</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Monitoring the current state of servers and cloud resources</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Backup of data and system configurations</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Managing user accounts and access rights</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no13</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is a Terraform state file?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A file containing information about the current state of the managed infrastructure</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A file with environment variables for running Terraform commands</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A log file with all executed Terraform operations</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A configuration file with settings for cloud service providers</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no14</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the <code>terraform plan</code> command do?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Shows the changes that will be applied without executing them</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Applies all changes to the infrastructure immediately</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Creates a backup of the current state of the infrastructure</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Deletes all resources defined in the configuration</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no15</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is a Terraform provider?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A plugin for interacting with a specific platform or service</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A company providing cloud services for infrastructure deployment</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A file describing all project resources</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A command to apply changes to the infrastructure</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no16</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is an Ansible playbook?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A YAML file describing tasks to be executed on hosts</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A list of all available Ansible modules for automation</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>An inventory file with a list of target hosts</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A log of all Ansible operations executed on hosts</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no17</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is an Ansible role?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A reusable set of tasks, files, and variables for a specific purpose</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>User access rights to target servers</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A type of module for working with databases</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A group of hosts in the inventory file for task execution</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no18</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Where is the infrastructure state stored by default in Terraform?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[In the local file <code>terraform.tfstate</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>In a remote S3 bucket</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>In the memory of the Terraform process</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>In a PostgreSQL database</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no19</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is a Terraform module?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A reusable container for multiple resources in a project</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A separate provider for working with a cloud platform</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A command to initialize a new Terraform project</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A state file with all created resources</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no20</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the principle behind immutable infrastructure?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Replacing servers instead of modifying them during updates</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Regularly updating servers in place without rebooting</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using a single server for all development environments</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Keeping old versions of servers for rollback purposes</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no21</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is GitOps in the context of infrastructure management?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Using Git as the single source of truth for infrastructure</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A tool for automatically committing infrastructure changes to a repository</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A method of backing up configurations to a Git repository</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The practice of storing application source code together with infrastructure</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no22</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which command initializes a new Terraform project?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>terraform init</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>terraform start</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>terraform create</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>terraform new</code>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no23</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is an Ansible module?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A ready-to-use block of code for performing a specific task</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A file with variables for use in a playbook</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A group of hosts in the inventory file</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A YAML file describing a sequence of tasks</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme08_no24</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the advantage of versioning IaC code?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The ability to track infrastructure changes and roll back to previous versions</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Automatic creation of backups for all servers</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Faster deployment of new application versions</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Automatic installation of security updates on servers</text>
+    </answer>
+  </question>
+
+</quiz>

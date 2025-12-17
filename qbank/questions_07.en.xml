@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<quiz>
+  <!-- Category for questions -->
+  <question type="category">
+    <category>
+      <text>$course$/07_optimization</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What principle should be applied before starting to optimize a CI/CD pipeline?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Measure before you optimize</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Optimize all stages simultaneously</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Start with the fastest processes</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Add more CPU and hope for the best</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is a bottleneck in a CI/CD pipeline?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A stage in the process that limits the overall system performance</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Any pipeline stage that takes longer than one minute</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The last stage in the pipeline execution sequence</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The stage with the highest number of errors and failures</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does Amdahl's Law define?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The theoretical limit of speedup when adding computational resources</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The minimum number of tests required to ensure quality code coverage</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The optimal number of sequential stages in a build pipeline</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The maximum number of parallel agents for task execution</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no04</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is parallelization in the context of CI/CD?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Simultaneous execution of independent tasks on different resources</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Sequential execution of all tests in strict order</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Speeding up one process through optimization</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Running one pipeline multiple times in a row</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no05</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What type of caching is based on the hash of the dependency file?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Content-based caching</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Time-based caching</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Version-based caching</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Manual caching</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no06</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What metric measures the total time from change initiation to deployment?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Lead Time</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Cycle Time</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Throughput</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Wait Time</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no07</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the Throughput metric show in CI/CD?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The number of successfully processed changes per unit of time</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The total time to complete a full project build</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The percentage of successful builds out of the total number of runs</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The waiting time of tasks in the execution queue</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no08</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the first step in the Theory of Constraints (TOC) optimization cycle?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Identification of the constraint</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Exploitation of the constraint</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Subordination to the constraint</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Elevation of the constraint</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no09</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does "exploitation of the constraint" mean in the Theory of Constraints?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Maximally efficient use of the bottleneck without additional investments</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Adding additional computational resources to the system bottleneck</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Complete removal of the bottleneck from the execution process</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Replacement of the bottleneck with new technology</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no10</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>According to the principles of the Theory of Constraints (TOC), what happens to the system when an hour is lost at the bottleneck?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The entire system loses an hour of productivity</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Only the bottleneck loses an hour of productivity</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The system compensates for the loss at other stages</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The loss does not affect the overall execution time</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no11</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What happens if you speed up a stage that is NOT a bottleneck?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The overall system performance does not change</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The entire system speeds up proportionally to the improvement of the stage</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The bottleneck automatically speeds up along with it</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The system becomes unstable and unpredictable</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no12</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What cache invalidation strategy updates the cache at specified time intervals?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Time-based</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Content-based</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Version-based</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Manual</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no13</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What level of caching includes saving node_modules and other dependencies?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Dependency caching</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Build artifact caching</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Docker image caching</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Test result caching</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no14</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>According to the Pareto principle, what should be the focus during optimization?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>On the 20% of processes that provide 80% of the effect</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>On all system processes evenly and simultaneously</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>On the fastest processes for further acceleration</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>On processes with the least number of errors and failures</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no15</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the limitation of parallelization in CI/CD?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Dependencies between tasks</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Number of developers</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Codebase size</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Software version</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no16</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What approach helps reduce Docker image build time?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Using multi-stage builds and optimizing layer order</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Disabling layer caching to ensure a clean build</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Installing all dependencies in a single layer for simplicity</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using the latest tag for all base images</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no17</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is "incremental build" in the context of CI/CD optimization?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Building only the changed components of the system without rebuilding the entire project</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Gradually increasing the number of parallel build agents</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Adding new stages to the build pipeline step by step</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Increasing the frequency of pipeline runs with each commit</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no18</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What technique helps reduce test execution time?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Categorizing tests and running independent groups in parallel</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Running all tests sequentially for result accuracy</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Disabling slow integration tests in favor of fast ones</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using a single agent for all types of tests</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no19</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the "fail fast" principle mean in CI/CD optimization?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Performing quick and critical checks at the beginning of the pipeline</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Immediately stopping work upon any code error</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Avoiding retries of failed stages</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Running tests after lunch break when everyone is calmer</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme07_no20</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What method helps optimize the use of CI/CD agents?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Dynamic scaling of agents based on current load</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using a single constantly running agent for all tasks</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Allocating a separate agent for each developer in the team</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Manually disabling unused agents to save resources</text>
+    </answer>
+  </question>
+
+</quiz>

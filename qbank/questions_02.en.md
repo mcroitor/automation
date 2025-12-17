@@ -157,3 +157,73 @@
     - `mkdir logs; cd logs`
 15. How to list files (including hidden ones) in directory `/app/bin` with detailed information in the terminal?
     - `ls -la /app/bin`
+
+## Integration
+
+1. Write a Bash script that:
+   1. Reads the environment variable `APP_ENV`.
+   2. If `APP_ENV` is not set, prints the message "APP_ENV is not set" and exits with code 1.
+   3. Reads the environment variable `BRANCH_NAME`.
+   4. If `BRANCH_NAME` is not set, sets its value to "main".
+   5. Clones the Git repository `https://gitlab.local/tesseract/tesseract.git` into the directory `/opt/tesseract`
+   6. Changes to the directory `/opt/tesseract`.
+   7. Switches to the branch named in the `BRANCH_NAME` variable.
+   8. Executes the command `make deploy`.
+   9. If the `make deploy` command succeeds, prints the message "Deployment succeeded!".
+   10. Logs all steps to the file `/var/log/deploy.log`.
+2. Write a Bash script that:
+   1. Reads the environment variable `DB_HOST`.
+   2. If `DB_HOST` is not set, prints the message "DB_HOST is not set" and exits with code 1.
+   3. Reads the environment variable `DB_PORT`.
+   4. If `DB_PORT` is not set, sets its value to "5432".
+   5. Reads the environment variable `DB_USER`.
+   6. If `DB_USER` is not set, prints the message "DB_USER is not set" and exits with code 1.
+   7. Reads the environment variable `DB_PASSWORD`.
+   8. If `DB_PASSWORD` is not set, prints the message "DB_PASSWORD is not set" and exits with code 1.
+   9. Executes the SQL database migration command using the file `migrations.sql`:
+      `psql -h $DB_HOST -p $DB_PORT -U $DB_USER -f migrations.sql`
+   10. Logs all steps to the file `/var/log/db_migration.log`.
+3. Write a Bash script that:
+   1. Reads the environment variable `SERVICE_NAME`.
+   2. If `SERVICE_NAME` is not set, prints the message "SERVICE_NAME is not set" and exits with code 1.
+   3. Reads the environment variable `SERVICE_PORT`.
+   4. If `SERVICE_PORT` is not set, sets its value to "8080".
+   5. Checks if the service named in the `SERVICE_NAME` variable is running using the command `systemctl is-active $SERVICE_NAME`.
+   6. If the service is not running, attempts to start it using the command `systemctl start $SERVICE_NAME`.
+   7. After the start attempt, checks the service status again.
+   8. If the service is running successfully, prints the message "Service $SERVICE_NAME is running on port $SERVICE_PORT".
+   9. If the service failed to start, prints the message "Failed to start service $SERVICE_NAME".
+   10. Logs all steps to the file `/var/log/service_check.log`.
+4. Write a Bash script that:
+   1. Reads the environment variable `BACKUP_DIR`.
+   2. If `BACKUP_DIR` is not set, prints the message "BACKUP_DIR is not set" and exits with code 1.
+   3. Reads the environment variable `SOURCE_DIR`.
+   4. If `SOURCE_DIR` is not set, prints the message "SOURCE_DIR is not set" and exits with code 1.
+   5. Checks if the directory `BACKUP_DIR` exists. If not, creates it using the command `mkdir -p $BACKUP_DIR`.
+   6. Checks if the directory `SOURCE_DIR` exists. If not, prints the message "SOURCE_DIR does not exist" and exits with code 1.
+   7. Creates an archive named `backup_YYYYMMDD_HHMMSS.tar.gz`, where `YYYYMMDD_HHMMSS` is the current date and time, containing the contents of the directory specified in `SOURCE_DIR`.
+   8. Saves the created archive to the directory specified in `BACKUP_DIR`.
+   9. If the archive is created successfully, prints the message "Backup created successfully at $BACKUP_DIR/backup_YYYYMMDD_HHMMSS.tar.gz".
+   10. Logs all steps to the file `/var/log/backup.log`.
+5. Write a Bash script that:
+   1. Reads the environment variable `WATCH_DIR`.
+   2. If `WATCH_DIR` is not set, prints the message "WATCH_DIR is not set" and exits with code 1.
+   3. Reads the environment variable `MAX_USAGE` (maximum disk usage percentage).
+   4. If `MAX_USAGE` is not set, sets its value to "80".
+   5. Reads the environment variable `FILE_AGE_DAYS` (file age for deletion in days).
+   6. If `FILE_AGE_DAYS` is not set, sets its value to "30".
+   7. Checks the current disk usage for the directory `WATCH_DIR` using the command `df`.
+   8. If the usage exceeds `MAX_USAGE`, finds and deletes files older than `FILE_AGE_DAYS` days in the directory `WATCH_DIR` using the command `find $WATCH_DIR -type f -mtime +$FILE_AGE_DAYS -delete`.
+   9. After cleanup, prints a message with the amount of freed space.
+   10. Logs all steps to the file `/var/log/disk_cleanup.log`.
+6. Write a Bash script that:
+   1. Reads the environment variable `DOCKER_IMAGE`.
+   2. If `DOCKER_IMAGE` is not set, prints the message "DOCKER_IMAGE is not set" and exits with code 1.
+   3. Reads the environment variable `CONTAINER_NAME`.
+   4. If `CONTAINER_NAME` is not set, sets its value to "app".
+   5. Reads the environment variable `CONTAINER_PORT`.
+   6. If `CONTAINER_PORT` is not set, sets its value to "8080".
+   7. Checks if a container with the name `CONTAINER_NAME` exists using the command `docker ps -a`. If it exists, stops it with the command `docker stop $CONTAINER_NAME` and removes it with the command `docker rm $CONTAINER_NAME`.
+   8. Executes the command `docker pull $DOCKER_IMAGE` to pull the image.
+   9. Runs the container with the command `docker run -d --name $CONTAINER_NAME -p $CONTAINER_PORT:$CONTAINER_PORT $DOCKER_IMAGE` and upon successful start, prints the message "Container $CONTAINER_NAME started successfully on port $CONTAINER_PORT".
+   10. Logs all steps to the file `/var/log/docker_deploy.log`.
