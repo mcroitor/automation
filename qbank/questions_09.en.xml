@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<quiz>
+  <!-- Category for questions -->
+  <question type="category">
+    <category>
+      <text>$course$/09_security</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What principle requires granting only the necessary access rights to scripts?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Principle of Least Privilege</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Principle of defense in depth</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Whitelist principle</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Principle of trust</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What measure prevents the execution of malicious code through user input?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Validation of data type and format before processing</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Encryption of input data before storage</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Increasing the buffer size for input data</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using asynchronous input processing</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is Command Injection?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Injection of system commands through user input</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Use of system commands in a script</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Substitution of system commands in the operating system</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Absence of a command in the system</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no04</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What method is recommended to prevent SQL injection?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Parameterized queries</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>String concatenation</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Use of eval</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Input sanitization</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no05</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is Path Traversal vulnerability?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Attempt to access files outside the allowed range using `../`</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Directory traversal to find vulnerable files</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Use of symbolic links for navigation</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Rapid movement through the file system</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no06</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What Bash command sets strict mode for script execution?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>set -euo pipefail</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>set -x strict</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>set -v</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>set -n</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no07</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which of the following methods of storing secrets is the least secure?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>In the application source code</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>In environment variables loaded at runtime</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>In a configuration file with restricted permissions</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>In a secrets management system (Vault)</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no08</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is a `.env` file?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A file for storing environment variables</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A Bash configuration file</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>An environment variables file for the production environment</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>An executable script</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no09</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which file should be used to prevent secrets from being committed to Git?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>.gitignore</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>.gitattributes</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>.gitconfig</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>.gitsecrets</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no10</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is HashiCorp Vault?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A centralized secrets management system</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A backup tool</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A monitoring system</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A secure database for log storage</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no11</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the abbreviation GDPR stand for?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>General Data Protection Regulation</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Global Data Privacy Rules</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>General Database Protection Rights</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Government Data Processing Regulation</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no12</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which GDPR principle requires collecting only necessary data?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Data minimization</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Purpose limitation</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Storage limitation</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Data accuracy</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no13</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is secret rotation?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Regularly changing secrets to limit the lifetime of compromised data</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Initial creation and storage of a secret</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Creating backups of secrets</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Auditing access to secrets</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no14</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which tool is used to prevent adding secrets to a Git repository?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>git-secrets</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>git-lfs</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>git-flow</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>git-hooks</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no15</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How is it recommended to pass secrets in a Jenkins pipeline?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Through the Credentials Store using credentials()</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Directly in the Jenkinsfile code</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>In code comments</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Through URL parameters</text>
+      <text></text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no16</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the Zero Trust principle?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>No system component is trusted by default</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Trust is established after initial authentication</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Trust all components within the internal network perimeter</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Trust is inherited from parent system components</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no17</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What data should be encrypted in secure environments?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Data at rest and in transit</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Only data transmitted over the internet</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Only data at rest</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Only data containing personal information</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no18</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is network segmentation?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Dividing the network into isolated segments with controlled interaction</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Grouping network devices by physical location</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Assigning different IP ranges to departments</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Separating production and development networks physically</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no19</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the purpose of auditing automation systems?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Checking compliance with security standards and regulatory requirements</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Increasing script execution speed</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Deleting old logs</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Installing new software</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no20</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the scope of CI/CD pipeline auditing include?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Assessing the security and efficiency of continuous integration and delivery processes</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Only checking build speed</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Only analyzing artifact size</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Only counting the number of commits</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no21</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What approach is recommended for input validation?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Using allowlists (whitelists) of permitted values</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using blocklists (blacklists) of forbidden values</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Regular expression pattern matching</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Length and type checking only</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no22</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is Defense in Depth?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Applying multiple layers of protection</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Single entry point with maximum protection</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Network perimeter protection</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Application-level protection only</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no23</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the recommended rotation frequency for database credentials?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Every 90 days</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Every 180 days</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Every 365 days</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Every day</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no24</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is a "data subject" according to GDPR?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>An individual whose personal data is processed</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>An organization processing data</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A server storing data</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Software processing data</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no25</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What GDPR principle requires data to be collected only for specific purposes?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Purpose limitation</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Data minimization</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Storage limitation</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Accuracy</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no26</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What should be implemented in CI/CD pipelines to comply with the Storage Limitation principle?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Mechanisms for automatic data deletion after expiration</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Increasing storage capacity</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Data replication to multiple servers</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Daily backups</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme09_no27</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is RoPA in the context of GDPR?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Record of Processing Activities</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Return of Personal Assets</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Regulation of Privacy Acceptance</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Rights of Processing Administrators</text>
+    </answer>
+  </question>
+  
+</quiz>

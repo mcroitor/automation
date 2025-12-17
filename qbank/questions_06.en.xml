@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Category for questions -->
+  <question type="category">
+    <category>
+      <text>$course$/06_jenkins</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What port is used for communication between the Jenkins controller and agents?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>50000</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>8080</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>8443</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>22</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What programming language is Jenkinsfile written in?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Groovy</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Python</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>JavaScript</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Java</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What keyword is used to define variables in Groovy?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>def</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>var</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>let</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>const</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no04</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What built-in variable contains the incrementing number of the current build in Jenkins?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>env.BUILD_NUMBER</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>env.BUILD_ID</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>env.JOB_NUMBER</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>env.PIPELINE_ID</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no05</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What command is used to execute a shell command on a Linux agent in Jenkins?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>sh 'command'</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>exec 'command'</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>bash 'command'</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>run 'command'</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no06</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What block in the declarative syntax defines actions after the pipeline completes in Jenkins?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>post</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>finally</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>after</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>cleanup</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no07</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What protocol is commonly used for communication with persistent agents on Unix-like systems?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>SSH</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>HTTP</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>JNLP</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>FTP</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no08</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What type of parameter is used to select from a predefined list of values in Jenkins?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>choice</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>select</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>dropdown</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>list</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no09</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does <code>agent any</code> mean in the declarative syntax of Jenkins?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The pipeline can run on any available agent</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The pipeline will not run on any agent</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The pipeline will run only on the master node of the controller</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The pipeline requires a specially configured named agent</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no10</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Why is it not recommended to run builds on the Jenkins controller node?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Builds may gain access to the controller's configuration</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The controller physically cannot perform build tasks</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>It requires purchasing additional commercial licenses</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The controller only supports running agents, not builds</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no11</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What block in the <code>post</code> section runs regardless of the build result in Jenkins?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>always</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>success</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>failure</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>unstable</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no12</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What Jenkins service manages agents and distributes tasks?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Jenkins controller</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Jenkins agent</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Jenkins server</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Jenkins node manager</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no13</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What Jenkins service performs build tasks?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Jenkins agent</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Jenkins controller</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Jenkins pipeline executor</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Jenkins build manager</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no14</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>In which file are Jenkins pipeline definitions usually stored?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Jenkinsfile</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>pipeline.yml</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>build.groovy</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>pipeline.jenkins</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no15</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What command is used to execute Windows commands on a Jenkins agent?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>bat 'command'</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>cmd 'command'</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>win 'command'</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>exec 'command'</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no16</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What block defines the execution stages in a declarative Jenkins pipeline?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>stages</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>steps</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>phases</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>blocks</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no17</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the <code>when</code> directive do in a declarative Jenkins pipeline?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Defines conditions for executing a stage</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Sets a timeout for stage execution</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Specifies which builds to reference</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Determines the build start time</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no18</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What section is used to define environment variables in a declarative Jenkins pipeline?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>environment</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>env</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>variables</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>params</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no19</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does parallel execution of stages mean in a Jenkins pipeline?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Simultaneous execution of multiple independent stages</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Running multiple builds simultaneously for different branches</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using multiple agents for a single stage</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Speeding up work by adding CPU cores</text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme06_no20</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What type of credentials is NOT supported by Jenkins by default?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Biometric data (fingerprints)</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Username with password</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>SSH Username with private key</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Secret text</text>
+    </answer>
+  </question>
+
+  <!--
+  ## Usage
+
+1. What Docker image is officially recommended for running Jenkins?
+   - jenkins/jenkins:lts
+
+2. Through which object is access to environment variables in a Jenkins pipeline provided?
+   - env
+
+3. What built-in variable contains the name of the job in Jenkins?
+   - JOB_NAME
+
+4. What is the name of the section in a declarative pipeline that runs after all stages have
+  completed?
+   - post
+
+5. What built-in variable contains the path to the workspace directory of the current build?
+   - WORKSPACE
+
+6. What command in Groovy is used to print text to the Jenkins console?
+   - echo
+
+7. What is the name of the built-in variable that contains the current build number?
+   - BUILD_NUMBER
+
+8. What method is used to execute shell commands on a Linux agent?
+   - sh
+
+9. What type of parameter allows a user to select a value from a dropdown list?
+   - choice
+
+10. What built-in variable contains the full URL of the current build?
+    - BUILD_URL
+-->
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme06_no1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What Docker image is officially recommended for running Jenkins?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>jenkins/jenkins:lts</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme06_no2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Through which object is access to environment variables in a Jenkins pipeline provided?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>env</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme06_no3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What built-in variable contains the name of the job in Jenkins?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>JOB_NAME</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme06_no4</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the name of the section in a declarative pipeline that runs after all stages have completed?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>post</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme06_no5</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What built-in variable contains the path to the workspace directory of the current build?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>WORKSPACE</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme06_no6</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What command in Groovy is used to print text to the Jenkins console?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>echo</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme06_no7</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the name of the built-in variable that contains the current build number?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>BUILD_NUMBER</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme06_no8</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What method is used to execute shell commands on a Linux agent?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>sh</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme06_no9</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What type of parameter allows a user to select a value from a dropdown list?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>choice</text>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name>
+      <text>understanding_theme06_no10</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What built-in variable contains the full URL of the current build?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>BUILD_URL</text>
+    </answer>
+  </question>
+</quiz>

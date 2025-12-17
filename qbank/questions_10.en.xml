@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<quiz>
+  <!-- Category for questions -->
+  <question type="category">
+    <category>
+      <text>$course$/10_best_practices</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the CAMS model in DevOps represent?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Culture, Automation, Measurement, Sharing</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Continuous, Automated, Measured, Secure</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Code, Applications, Monitoring, Security</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Collaboration, Analysis, Management, Systems</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What principle means breaking work into minimal viable changes?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Small Batch Size</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Big Bang Releases</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Waterfall Approach</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Monolithic Deployment</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What are Feature Flags?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A mechanism to control functionality through configuration</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A tool for managing code versions</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A method for performance testing</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>An application monitoring system</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no04</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the Immutable Artifacts principle mean?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>An artifact is created once and used across all environments without changes</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>An artifact is rebuilt for each environment</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>An artifact has different configurations for different environments</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>An artifact is stored only in the production environment</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no05</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which environment is intended for end users and requires high availability?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Production environment</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Development environment</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Testing environment</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Local developer environment</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no06</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is Infrastructure as Code (IaC)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Describing infrastructure as version-controlled code</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Manual server configuration</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using graphical interfaces for setup</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Infrastructure documentation in a wiki</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no07</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is GitOps?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Git as the single source of truth for system state</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using Git only for code storage</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Manual deployment through Git commands</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Monitoring system for Git repositories</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no08</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does Shift-Left Security mean?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Integrating security practices early in the development process</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Moving security checks to post-deployment stages</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Assigning security responsibility only to the security team</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Performing security checks only in production</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no09</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is NOT a pillar of Observability?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Dashboards</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Metrics</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Logs</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Traces</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no10</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the Fail Fast principle mean?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Quickly detecting and responding to errors during development</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Ignoring errors to speed up development</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Delaying error fixing</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Fast response to errors in production</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no11</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is NOT a key DORA metric for evaluating DevOps?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Code Coverage</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Deployment Frequency</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Lead Time for Changes</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Change Failure Rate</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no12</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the Test Pyramid in testing strategy?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Many unit tests at the base, fewer integration tests, and minimal end-to-end tests</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using a pyramid scheme for organizing integration tests</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Many end-to-end tests at the base, fewer integration tests, and minimal unit tests</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Minimal unit tests, more end-to-end tests, maximum integration tests at the base</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no13</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is Trunk-Based Development?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Development on the main branch with short-lived feature branches</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Long-lived feature branches for months</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Development without using branches</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using a separate branch for each developer</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no14</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is Blue-Green Deployment?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Maintaining two identical environments for safe deployment</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using blue and green colors in the interface</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Deploying only at night</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Backing up before deployment</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no15</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What are Canary Releases?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Gradual deployment of a new version with metric monitoring</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Deployment only for internal users</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Rolling back all changes at the first error</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Testing on birds before deployment</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no16</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does Configuration Drift mean?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Divergence of environments due to manual changes</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Rapid configuration changes</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Automatic configuration updates</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Configuration synchronization</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no17</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What are Blameless Post-Mortems?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Incident analysis without blaming, focusing on systemic causes</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Blaming and publicly punishing those responsible</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Ignoring incidents</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Discussing the project after its successful completion</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no18</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does SAST mean in the context of Shift-Left Security?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Static Application Security Testing</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Security After System Testing</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Secure Automated Software Tools</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>System Administration Security Tasks</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no19</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What deployment approach uses a pull model?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>GitOps</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Jenkins push deployment</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Manual deployment</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>FTP upload</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no20</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is Contract Testing in microservices architecture?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Checking API compatibility between services</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Legal contracts between teams</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Performance testing</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Contract security verification</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no21</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which CAMS principle focuses on knowledge sharing?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Sharing</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Culture</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Automation</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Measurement</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no22</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does idempotency of operations mean in IaC?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Reapplying does not change the system from the desired state</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Each application creates new resources</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Operations are performed only once</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Inability to reapply</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no23</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is ADR in the context of documentation?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Architecture Decision Records</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Automated Deployment Records</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Application Development Rules</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Advanced Data Reporting</text>
+    </answer>
+  </question>
+  
+  <question type="multichoice">
+    <name>
+      <text>theory_theme10_no24</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What problem arises from inverting the Test Pyramid?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Many slow e2e tests make the pipeline slow and unstable</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Tests run too quickly</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Lack of code coverage by test scenarios</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Integration tests become ineffective and redundant</text>
+    </answer>
+  </question>
+  
+</quiz>
