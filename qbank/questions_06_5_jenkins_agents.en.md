@@ -81,8 +81,8 @@
 14. Which URI format is used to connect to the Docker host socket?
     - [x] unix:///var/run/docker.sock
     - [ ] file:///var/run/docker.sock
-    - [ ] tcp://localhost:2375
-    - [ ] tcp://host.docker.internal:2375
+    - [ ] socket:///var/run/docker.sock
+    - [ ] http://var/run/docker.sock
 
 15. Which address is used to access the Docker host from a Jenkins container?
     - [x] host.docker.internal
