@@ -41,19 +41,23 @@ This course is structured over 15 weeks and covers a range of topics, including:
    - Jenkinsfile
    - Groovy Language
    - Basics of Pipeline Programming
-7. Optimization and Scaling
+7. Jenkins Agents
+   - Types of Jenkins Agents
+   - Setting up a Permanent Agent via SSH
+   - Setting up Docker Agents
+8. Optimization and Scaling
     - Performance Tuning
     - Scaling Automation Solutions
     - Load Testing
-8. Infrastructure as Code (IaC)
+9. Infrastructure as Code (IaC)
     - Introduction to IaC
     - Tools and Technologies (e.g., Terraform, Ansible)
     - Best Practices for IaC
-9. Security in Automation
+10. Security in Automation
     - Secure Coding Practices
     - Handling Sensitive Data
     - Automation in Secure Environments
-10. Best Practices for Automation
+11. Best Practices for Automation
     - Writing Maintainable Scripts
     - Documentation and Comments
     - Testing Automated Scripts
