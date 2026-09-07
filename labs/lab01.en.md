@@ -28,6 +28,14 @@ Automate one of the following tasks using a Shell script:
    4. If the disk space usage exceeds the threshold value, the script should send a notification to the specified email;
    5. The script should output the current disk space usage in percent for the specified directory to the file `disk_usage.log`;
    6. The script should check that the specified directory exists and output appropriate error messages.
+4. OCR PDF files:
+   1. The script should be named `ocr.sh`;
+   2. The script should take at least one obligatory argument: the path to the PDF file to process;
+   3. The second argument is optional and specifies the language for text recognition (e.g., `en` for English, `ru` for Russian);
+   4. By default, the English language (`en`) is used;
+   5. The script should check that the specified PDF file exists and output appropriate error messages;
+   6. The script should check if the utilities `pdftotext` and `tesseract` exist and output appropriate error messages if they are missing;
+   7. The script should save the text recognition result to a file with the same name as the original PDF but with the `.txt` extension.
 
 ### Requirements
 

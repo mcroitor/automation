@@ -196,9 +196,9 @@ __Comment:__ In addition to scripting languages, a variety of automation tools s
 +----------------------------------------------------------------+
 | A practical, real-world introduction to automation.            |
 |                                                                |
-| - Bash and PowerShell for automation scripts                   |
-| - GitHub Actions for repository workflows                      |
+| - Bash and Python for automation scripts                       |
 | - Jenkins for build and deployment automation                  |
+| - Kibana / Grafana for monitoring                              |
 |                                                                |
 | Primary OS for practical work: Linux (Ubuntu / Debian).        |
 |                                                                |

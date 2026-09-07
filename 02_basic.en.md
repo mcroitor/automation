@@ -1,11 +1,11 @@
 # Basics of Scripting
 
-> "And what do you have to offer?"<br>
-> "What do we have?" - asked Hawk-nose, turning around.<br>
-> "Aldan-three," - said The Beard.<br>
-> "A well-endowed machine," - I said. - "Has it been running well?"<br>
-> "Well, how shall I say..<br>
-> "I get it," - I said.<br>
+> "And what do you have to offer?"  
+> "What do we have?" - asked Hawk-nose, turning around.  
+> "Aldan-three," - said The Beard.  
+> "A well-endowed machine," - I said. - "Has it been running well?"  
+> "Well, how shall I say..  
+> "I get it," - I said.  
 > "As a matter of fact, it hasn't been debugged yet," - said The Beard. - "Stay here with us and fix it up."
 >
 > __A. and B. Strugatsky, *Monday Begins on Saturday*__
