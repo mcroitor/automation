@@ -10,7 +10,7 @@ Download the project attached to this assignment and unpack it in a convenient l
 
 ## Task
 
-In the `automation` project, create a branch called `lab02`. Create a directory named `lab02`. Inside it, create a file called `currency_exchange_rate.py`.
+In the `automation` repository, create a branch called `lab02`. Create a directory named `lab02`. Inside it, create a file called `currency_exchange_rate.py`.
 
 Write a Python script (`currency_exchange_rate.py`) that will interact with the service API. The script must perform the following functions:
 
@@ -27,6 +27,14 @@ Create a file `readme.md` and describe:
 - How to install the necessary dependencies to run the script;
 - How to run the script with command examples;
 - How the script is structured (main functions and logic).
+
+## Requirements
+
+1. Create branch `lab02`;
+2. In this branch create `lab02` folder;
+3. In the `lab02` folder create the necessary by the task script;
+4. In the `lab02` folder create `README.md` file with the script description (what script do, how to use it) with usage examples;
+5. Send the project to the server and merge changes to the main branch.
 
 ## Presentation
 

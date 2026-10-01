@@ -93,37 +93,37 @@ Amdahl's Law is a fundamental principle that determines the theoretical limit of
 
 **Amdahl's Law Formula:**
 
-```text
-Speedup = 1 / ((1 - P) + P/N)
-```
+$$
+A = \frac{1}{((1 - P) + P/N)}
+$$
 
 Where:
 
-- **P** = portion of the process that can be parallelized (from 0 to 1)
-- **N** = number of parallel threads/processors
-- **(1 - P)** = sequential (non-parallelizable) part
+- $A$ = portion of the process that can be parallelized (from 0 to 1)
+- $N$ = number of parallel threads/processors
+- $(1 - P)$ = sequential (non-parallelizable) part
 
 **Practical Example:**
 
 Suppose we have a CI/CD pipeline where:
 
-- 80% of time is spent executing tests (can be parallelized)
-- 20% of time is spent on sequential operations (build, deployment)
+- $80\%$ of time is spent executing tests (can be parallelized)
+- $20\%$ of time is spent on sequential operations (build, deployment)
 
 If we add 4 parallel agents for tests:
 
-```text
-Speedup = 1 / ((1 - 0.8) + 0.8/4)
-        = 1 / (0.2 + 0.2)
-        = 1 / 0.4
-        = 2.5x
-```
+$$
+A = 1 / ((1 - 0.8) + 0.8/4)
+         = 1 / (0.2 + 0.2)
+         = 1 / 0.4
+         = 2.5 \times
+$$
 
 Maximum theoretical speedup with infinite number of agents:
 
-```text
-Speedup_max = 1 / (1 - P) = 1 / 0.2 = 5x
-```
+$$
+A_\text{max} = 1 / (1 - P) = 1 / 0.2 = 5 \times
+$$
 
 **Conclusions for CI/CD:**
 
