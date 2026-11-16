@@ -1,0 +1,20 @@
+{
+  "academic": {
+    "description": "Default. Printed-paper look with blue-ink text.",
+    "background": "#FFFBF0",
+    "foreground": "#000F55",
+    "font": "JetBrains Mono"
+  },
+  "dark": {
+    "description": "Dark blue background with white text. For projectors and dark lecture halls.",
+    "background": "#000F55",
+    "foreground": "#FFFFFF",
+    "font": "JetBrains Mono"
+  },
+  "minimal": {
+    "description": "Clean white background with black text. Print-friendly.",
+    "background": "#FFFFFF",
+    "foreground": "#000000",
+    "font": "JetBrains Mono"
+  }
+}

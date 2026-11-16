@@ -53,11 +53,16 @@ This course is structured over 15 weeks and covers a range of topics, including:
     - Introduction to IaC
     - Tools and Technologies (e.g., Terraform, Ansible)
     - Best Practices for IaC
-10. Security in Automation
+10. Artifact Storage
+    - Introduction to Artifact Storage
+    - Tools and Technologies
+    - Best Practices for Artifact Storage
+    - Integration of Jenkins and JFrog Artifactory
+11. Security in Automation
     - Secure Coding Practices
     - Handling Sensitive Data
     - Automation in Secure Environments
-11. Best Practices for Automation
+12. Best Practices for Automation
     - Writing Maintainable Scripts
     - Documentation and Comments
     - Testing Automated Scripts
@@ -68,15 +73,16 @@ This course is structured over 15 weeks and covers a range of topics, including:
 | --- | --------------------------------- | --------- | ----------- | -------- |
 | 1   | Introduction to Automation        | 2         | 0           | 2        |
 | 2   | Basics of Scripting               | 2         | 2           | 4        |
-| 3   | Advanced Automation Techniques    | 4         | 4           | 8        |
-| 4   | Version Control and Collaboration | 2         | 4           | 6        |
+| 3   | Advanced Automation Techniques    | 4         | 4           | 4        |
+| 4   | Version Control and Collaboration | 2         | 2           | 6        |
 | 5   | CI/CD Pipelines                   | 2         | 0           | 2        |
-| 6   | Jenkins                           | 4         | 4           | 8        |
+| 6   | Jenkins                           | 2         | 4           | 8        |
 | 7   | Jenkins Agents                    | 4         | 4           | 8        |
 | 8   | Optimization and Scaling          | 2         | 4           | 6        |
 | 9   | Infrastructure as Code (IaC)      | 4         | 4           | 8        |
-| 10  | Security in Automation            | 2         | 4           | 6        |
-| 11  | Best Practices for Automation     | 2         | 0           | 2        |
+| 10  | Artifact Storage                  | 2         | 2           | 4        |
+| 11  | Security in Automation            | 2         | 4           | 6        |
+| 12  | Best Practices for Automation     | 2         | 0           | 2        |
 |     | **Total**                         | **30**    | **30**      | **60**   |
 
 ## Lab Work Topics

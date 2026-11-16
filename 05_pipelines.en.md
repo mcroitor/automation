@@ -98,7 +98,7 @@ A standard CI/CD process may include the following stages:
 3. **Security scanning**: Vulnerability analysis, dependency checking, and compliance with security requirements;
 4. **Code quality analysis**: Using static analysis to check compliance with quality and security standards;
 5. **Deployment to test environment**: Automatic deployment of artifacts to test environment for further testing;
-6. **Manual testing**: Conducting manual testing and acceptance testing;
+6. **Automated testing**: Conducting automated testing and acceptance testing;
 7. **Deployment to production environment**: Automatic or manual deployment of artifacts to production environment.
 
 An additional stage can be **monitoring**, which includes collecting and analyzing performance metrics, logs, and other data to ensure stable application operation in production environment.
